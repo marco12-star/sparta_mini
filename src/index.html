@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<link rel="stylesheet" href="css/normalize.min.css" />
+	<link rel="stylesheet" href="css/style.min.css" />
+
+	<script src="js/script.min.js" defer></script>
+	<title>Gulp</title>
+</head>
+
+<body>
+	<div class="content__wrapper">
+		@@include('./templates/_header.html')
+		<div class="content__slide">
+			<!-- Hero Banner -->
+
+			<section class="hero__banner">
+				<div class="container">
+					<div class="slider__pagination flex">
+						<button class="hero__prev prev banner__prev" type="button">
+							<svg width="12" height="18" viewBox="0 0 12 18" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M10.8298 1.28906L3.09961 9.01941L10.8298 16.7496" stroke-width="3" />
+							</svg>
+						</button>
+						<button class="hero__next next banner__next" type="button">
+							<svg width="12" height="18" viewBox="0 0 12 18" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.55688 16.75L9.28711 9.01965L1.55689 1.28943" stroke-width="3" />
+							</svg>
+						</button>
+					</div>
+					<div class="hero__slider">
+						<div>
+							<img src="./img/hero_img.png" class="visible-lg" alt="Мини футбольный клуб - Спартак">
+							<img src="./img/hero_img.png" class="visible-sm" alt="Мини футбольный клуб - Спартак">
+							<img src="./img/hero_img_xs.png" class="visible-xs" alt="Мини футбольный клуб - Спартак">
+						</div>
+						<div>
+							<img src="./img/hero_img.png" class="visible-lg" alt="Мини футбольный клуб - Спартак">
+							<img src="./img/hero_img.png" class="visible-sm" alt="Мини футбольный клуб - Спартак">
+							<img src="./img/hero_img_xs.png" class="visible-xs" alt="Мини футбольный клуб - Спартак">
+						</div>
+						<div>
+							<img src="./img/hero_img.png" class="visible-lg" alt="Мини футбольный клуб - Спартак">
+							<img src="./img/hero_img.png" class="visible-sm" alt="Мини футбольный клуб - Спартак">
+							<img src="./img/hero_img_xs.png" class="visible-xs" alt="Мини футбольный клуб - Спартак">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Hero Banner -->
+
+			<!-- Product Banner -->
+
+			<section class="product__banner">
+				<div class="container">
+					<div class="slider__pagination flex">
+						<button class="product__prev prev banner__prev" type="button">
+							<svg width="12" height="18" viewBox="0 0 12 18" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M10.8298 1.28906L3.09961 9.01941L10.8298 16.7496" stroke-width="3" />
+							</svg>
+						</button>
+						<button class="product__next next banner__next" type="button">
+							<svg width="12" height="18" viewBox="0 0 12 18" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.55688 16.75L9.28711 9.01965L1.55689 1.28943" stroke-width="3" />
+							</svg>
+						</button>
+					</div>
+					<div class="product__slider">
+						<div>
+							<a href="#"><img src="./img/desc.jpg" class="visible-lg"
+									alt="Мини футбольный клуб - Спартак"></a>
+							<a href="#"><img src="./img/tablet.jpg" class="visible-sm"
+									alt="Мини футбольный клуб - Спартак"></a>
+							<a href="#"><img src="./img/mobile.jpg" class="visible-xs"
+									alt="Мини футбольный клуб - Спартак"></a>
+						</div>
+						<div>
+							<a href="#"><img src="./img/desc.jpg" class="visible-lg"
+									alt="Мини футбольный клуб - Спартак"></a>
+							<a href="#"><img src="./img/tablet.jpg" class="visible-sm"
+									alt="Мини футбольный клуб - Спартак"></a>
+							<a href="#"><img src="./img/mobile.jpg" class="visible-xs"
+									alt="Мини футбольный клуб - Спартак"></a>
+						</div>
+						<div>
+							<a href="#"><img src="./img/desc.jpg" class="visible-lg"
+									alt="Мини футбольный клуб - Спартак"></a>
+							<a href="#"><img src="./img/tablet.jpg" class="visible-sm"
+									alt="Мини футбольный клуб - Спартак"></a>
+							<a href="#"><img src="./img/mobile.jpg" class="visible-xs"
+									alt="Мини футбольный клуб - Спартак"></a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Product Banner -->
+
+			<!-- News -->
+
+			<section class="news">
+				<div class="container">
+					<div class="flex alicentr justcontbetween">
+						<h2>Новости</h2>
+						<div class="flex">
+							<button class="news_prev prev" type="button">
+								<svg width="12" height="18" viewBox="0 0 12 18" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M10.8298 1.28906L3.09961 9.01941L10.8298 16.7496" stroke-width="3" />
+								</svg>
+							</button>
+							<button class="news_next next" type="button">
+								<svg width="12" height="18" viewBox="0 0 12 18" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.55688 16.75L9.28711 9.01965L1.55689 1.28943" stroke-width="3" />
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="news__slider">
+						<div>
+							<a href="#">
+								<img src="./img/news_1.png"
+									alt="Акции для юных болельщиков в фирменных магазинах спартак">
+								<div class="news__info">
+									<span class="date">28.05.2021</span>
+									<h3>Акции для юных болельщиков
+										в фирменных магазинах спартак</h3>
+									<p>Ко Дню защиты детей мы подготовили специальную акцию для наших юных красно-белых
+										болельщиков.
+										С 28 мая по 6 июня любые товары из категории «Детям» можно приобрести со скидкой
+										в
+										20%.
+									</p>
+									<div class="more">
+										<div class="more_btn">
+											<svg class="more_slide" width="7" height="10" viewBox="0 0 7 10" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.02808 8.76367L4.99512 4.79657L1.02808 0.82954"
+													stroke="white" stroke-width="1.53955" />
+											</svg>
+											<svg class="more_sliding" width="7" height="10" viewBox="0 0 7 10"
+												fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.02808 8.76367L4.99512 4.79657L1.02808 0.82954"
+													stroke="white" stroke-width="1.53955" />
+											</svg>
+										</div>
+										<span>Читать далее</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="#">
+								<img src="./img/news_2.png"
+									alt="Акции для юных болельщиков в фирменных магазинах спартак">
+								<div class="news__info">
+									<span class="date">28.05.2021</span>
+									<h3>Акции для юных болельщиков
+										в ДАРИМ СКИДКУ НА ИГРОВУЮ ФОРМУ «СПАРТАКА» магазинах спартак</h3>
+									<p>Думали приобрести форму любимой команды для свой коллекции, игры в футбол или
+										подарка близким?...
+									</p>
+									<div class="more">
+										<div class="more_btn">
+											<svg class="more_slide" width="7" height="10" viewBox="0 0 7 10" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.02808 8.76367L4.99512 4.79657L1.02808 0.82954"
+													stroke="white" stroke-width="1.53955" />
+											</svg>
+											<svg class="more_sliding" width="7" height="10" viewBox="0 0 7 10"
+												fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.02808 8.76367L4.99512 4.79657L1.02808 0.82954"
+													stroke="white" stroke-width="1.53955" />
+											</svg>
+										</div>
+										<span>Читать далее</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="#">
+								<img src="./img/news_1.png"
+									alt="Акции для юных болельщиков в фирменных магазинах спартак">
+								<div class="news__info">
+									<span class="date">28.05.2021</span>
+									<h3>Акции для юных болельщиков
+										в фирменных магазинах спартак</h3>
+									<p>Ко Дню защиты детей мы подготовили специальную акцию для наших юных красно-белых
+										болельщиков.
+										С 28 мая по 6 июня любые товары из категории «Детям» можно приобрести со скидкой
+										в
+										20%.
+									</p>
+									<div class="more">
+										<div class="more_btn">
+											<svg class="more_slide" width="7" height="10" viewBox="0 0 7 10" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.02808 8.76367L4.99512 4.79657L1.02808 0.82954"
+													stroke="white" stroke-width="1.53955" />
+											</svg>
+											<svg class="more_sliding" width="7" height="10" viewBox="0 0 7 10"
+												fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.02808 8.76367L4.99512 4.79657L1.02808 0.82954"
+													stroke="white" stroke-width="1.53955" />
+											</svg>
+										</div>
+										<span>Читать далее</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="#">
+								<img src="./img/news_2.png"
+									alt="Акции для юных болельщиков в фирменных магазинах спартак">
+								<div class="news__info">
+									<span class="date">28.05.2021</span>
+									<h3>Акции для юных болельщиков
+										в ДАРИМ СКИДКУ НА ИГРОВУЮ ФОРМУ «СПАРТАКА» магазинах спартак</h3>
+									<p>Думали приобрести форму любимой команды для свой коллекции, игры в футбол или
+										подарка близким?...
+									</p>
+									<div class="more">
+										<div class="more_btn">
+											<svg class="more_slide" width="7" height="10" viewBox="0 0 7 10" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.02808 8.76367L4.99512 4.79657L1.02808 0.82954"
+													stroke="white" stroke-width="1.53955" />
+											</svg>
+											<svg class="more_sliding" width="7" height="10" viewBox="0 0 7 10"
+												fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.02808 8.76367L4.99512 4.79657L1.02808 0.82954"
+													stroke="white" stroke-width="1.53955" />
+											</svg>
+										</div>
+										<span>Читать далее</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="#">
+								<img src="./img/news_1.png"
+									alt="Акции для юных болельщиков в фирменных магазинах спартак">
+								<div class="news__info">
+									<span class="date">28.05.2021</span>
+									<h3>Акции для юных болельщиков
+										в фирменных магазинах спартак</h3>
+									<p>Ко Дню защиты детей мы подготовили специальную акцию для наших юных красно-белых
+										болельщиков.
+										С 28 мая по 6 июня любые товары из категории «Детям» можно приобрести со скидкой
+										в
+										20%.
+									</p>
+									<div class="more">
+										<div class="more_btn">
+											<svg class="more_slide" width="7" height="10" viewBox="0 0 7 10" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.02808 8.76367L4.99512 4.79657L1.02808 0.82954"
+													stroke="white" stroke-width="1.53955" />
+											</svg>
+											<svg class="more_sliding" width="7" height="10" viewBox="0 0 7 10"
+												fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.02808 8.76367L4.99512 4.79657L1.02808 0.82954"
+													stroke="white" stroke-width="1.53955" />
+											</svg>
+										</div>
+										<span>Читать далее</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="#">
+								<img src="./img/news_2.png"
+									alt="Акции для юных болельщиков в фирменных магазинах спартак">
+								<div class="news__info">
+									<span class="date">28.05.2021</span>
+									<h3>Акции для юных болельщиков
+										в ДАРИМ СКИДКУ НА ИГРОВУЮ ФОРМУ «СПАРТАКА» магазинах спартак</h3>
+									<p>Думали приобрести форму любимой команды для свой коллекции, игры в футбол или
+										подарка близким?...
+									</p>
+									<div class="more">
+										<div class="more_btn">
+											<svg class="more_slide" width="7" height="10" viewBox="0 0 7 10" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.02808 8.76367L4.99512 4.79657L1.02808 0.82954"
+													stroke="white" stroke-width="1.53955" />
+											</svg>
+											<svg class="more_sliding" width="7" height="10" viewBox="0 0 7 10"
+												fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.02808 8.76367L4.99512 4.79657L1.02808 0.82954"
+													stroke="white" stroke-width="1.53955" />
+											</svg>
+										</div>
+										<span>Читать далее</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="#">
+								<img src="./img/news_1.png"
+									alt="Акции для юных болельщиков в фирменных магазинах спартак">
+								<div class="news__info">
+									<span class="date">28.05.2021</span>
+									<h3>Акции для юных болельщиков
+										в фирменных магазинах спартак</h3>
+									<p>Ко Дню защиты детей мы подготовили специальную акцию для наших юных красно-белых
+										болельщиков.
+										С 28 мая по 6 июня любые товары из категории «Детям» можно приобрести со скидкой
+										в
+										20%.
+									</p>
+									<div class="more">
+										<div class="more_btn">
+											<svg class="more_slide" width="7" height="10" viewBox="0 0 7 10" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.02808 8.76367L4.99512 4.79657L1.02808 0.82954"
+													stroke="white" stroke-width="1.53955" />
+											</svg>
+											<svg class="more_sliding" width="7" height="10" viewBox="0 0 7 10"
+												fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.02808 8.76367L4.99512 4.79657L1.02808 0.82954"
+													stroke="white" stroke-width="1.53955" />
+											</svg>
+										</div>
+										<span>Читать далее</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="#">
+								<img src="./img/news_2.png"
+									alt="Акции для юных болельщиков в фирменных магазинах спартак">
+								<div class="news__info">
+									<span class="date">28.05.2021</span>
+									<h3>Акции для юных болельщиков
+										в ДАРИМ СКИДКУ НА ИГРОВУЮ ФОРМУ «СПАРТАКА» магазинах спартак</h3>
+									<p>Думали приобрести форму любимой команды для свой коллекции, игры в футбол или
+										подарка близким?...
+									</p>
+									<div class="more">
+										<div class="more_btn">
+											<svg class="more_slide" width="7" height="10" viewBox="0 0 7 10" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.02808 8.76367L4.99512 4.79657L1.02808 0.82954"
+													stroke="white" stroke-width="1.53955" />
+											</svg>
+											<svg class="more_sliding" width="7" height="10" viewBox="0 0 7 10"
+												fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.02808 8.76367L4.99512 4.79657L1.02808 0.82954"
+													stroke="white" stroke-width="1.53955" />
+											</svg>
+										</div>
+										<span>Читать далее</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="#">
+								<img src="./img/news_1.png"
+									alt="Акции для юных болельщиков в фирменных магазинах спартак">
+								<div class="news__info">
+									<span class="date">28.05.2021</span>
+									<h3>Акции для юных болельщиков
+										в фирменных магазинах спартак</h3>
+									<p>Ко Дню защиты детей мы подготовили специальную акцию для наших юных красно-белых
+										болельщиков.
+										С 28 мая по 6 июня любые товары из категории «Детям» можно приобрести со скидкой
+										в
+										20%.
+									</p>
+									<div class="more">
+										<div class="more_btn">
+											<svg class="more_slide" width="7" height="10" viewBox="0 0 7 10" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.02808 8.76367L4.99512 4.79657L1.02808 0.82954"
+													stroke="white" stroke-width="1.53955" />
+											</svg>
+											<svg class="more_sliding" width="7" height="10" viewBox="0 0 7 10"
+												fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.02808 8.76367L4.99512 4.79657L1.02808 0.82954"
+													stroke="white" stroke-width="1.53955" />
+											</svg>
+										</div>
+										<span>Читать далее</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div>
+							<a href="#">
+								<img src="./img/news_2.png"
+									alt="Акции для юных болельщиков в фирменных магазинах спартак">
+								<div class="news__info">
+									<span class="date">28.05.2021</span>
+									<h3>Акции для юных болельщиков
+										в ДАРИМ СКИДКУ НА ИГРОВУЮ ФОРМУ «СПАРТАКА» магазинах спартак</h3>
+									<p>Думали приобрести форму любимой команды для свой коллекции, игры в футбол или
+										подарка близким?...
+									</p>
+									<div class="more">
+										<div class="more_btn">
+											<svg class="more_slide" width="7" height="10" viewBox="0 0 7 10" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.02808 8.76367L4.99512 4.79657L1.02808 0.82954"
+													stroke="white" stroke-width="1.53955" />
+											</svg>
+											<svg class="more_sliding" width="7" height="10" viewBox="0 0 7 10"
+												fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M1.02808 8.76367L4.99512 4.79657L1.02808 0.82954"
+													stroke="white" stroke-width="1.53955" />
+											</svg>
+										</div>
+										<span>Читать далее</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- News -->
+
+			<!-- partnerss -->
+
+			<section class="partners flex alicentr">
+				<div class="photobanner flex alicentr">
+
+					<a href="#"><img src="./img/partners/1.svg" alt="" width="236" height="57"></a>
+					<a href="#"><img src="./img/partners/2.svg" alt=""></a>
+					<a href="#"><img src="./img/partners/3.svg" alt=""></a>
+					<a href="#"><img src="./img/partners/4.svg" alt=""></a>
+					<a href="#"><img src="./img/partners/5.svg" alt=""></a>
+					<a href="#"><img src="./img/partners/6.svg" alt=""></a>
+					<a href="#"><img src="./img/partners/7.svg" alt=""></a>
+					<a href="#"><img src="./img/partners/8.svg" alt=""></a>
+
+					<a href="#"><img src="./img/partners/1.svg" alt="" width="236" height="57"></a>
+					<a href="#"><img src="./img/partners/2.svg" alt=""></a>
+					<a href="#"><img src="./img/partners/3.svg" alt=""></a>
+					<a href="#"><img src="./img/partners/4.svg" alt=""></a>
+					<a href="#"><img src="./img/partners/5.svg" alt=""></a>
+					<a href="#"><img src="./img/partners/6.svg" alt=""></a>
+					<a href="#"><img src="./img/partners/7.svg" alt=""></a>
+					<a href="#"><img src="./img/partners/8.svg" alt=""></a>
+
+				</div>
+			</section>
+
+			<!-- partnerss -->
+		</div>
+		@@include('./templates/_footer.html')
+	</div>
+	<!-- Jquery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!-- Jquery Migrate -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"
+		integrity="sha512-3fMsI1vtU2e/tVxZORSEeuMhXnT9By80xlmXlsOku7hNwZSHJjwcOBpmy+uu+fyWwGCLkMvdVbHkeoXdAzBv+w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!-- Slick JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+		integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="JS/main.js"></script>
+	<script>
+		$(document).ready(function () {
+			$('.hero__slider').slick({
+				arrows: true,
+				fade: true,
+				prevArrow: $('.hero__prev'),
+				nextArrow: $('.hero__next'),
+			});
+		});
+
+		$(document).ready(function () {
+			$('.product__slider').slick({
+				arrows: true,
+				fade: true,
+				prevArrow: $('.product__prev'),
+				nextArrow: $('.product__next'),
+			});
+		});
+
+		$(document).ready(function () {
+			$('.news__slider').slick({
+				arrows: true,
+				slidesToShow: 2,
+				slidesToScroll: 1,
+				prevArrow: $('.news_prev'),
+				nextArrow: $('.news_next'),
+				responsive: [{
+					breakpoint: 767,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						fade: true,
+					}
+				}]
+			});
+		});
+	</script>
+</body>
+
+</html>
