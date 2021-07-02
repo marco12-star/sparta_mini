@@ -617,6 +617,9 @@ nav {
 	position: relative;
 	overflow: hidden;
 	background: #F4F4F4;
+}
+
+.partners * {
 	transition: unset;
 }
 
@@ -627,9 +630,14 @@ nav {
 	white-space: nowrap;
 	animation: bannermove 10s linear infinite;
 
+	&:hover {
+		animation-play-state: paused;
+	}
+
 	a {
 		margin: 0 20px;
 		opacity: .7;
+		transition: .2s ease;
 
 		&:hover {
 			opacity: 1;
@@ -694,9 +702,12 @@ nav {
 	a {
 		border: 1px solid #C7C7C7;
 		padding: 5px;
-		display: flex;
-		align-items: center;
 		border-radius: 5px;
+
+		picture {
+			display: flex;
+			align-items: center;
+		}
 
 		&:hover {
 			background-color: #f0f0f0;
