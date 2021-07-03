@@ -31,14 +31,14 @@
         line-height: 24px;
     }
 
-    .dashboard__menu {
+    &__menu {
         list-style: none;
         padding: 0;
         margin-top: 24px;
     }
 
 
-    .dashboard__wrap {
+    &__wrap {
         margin-top: 32px;
     }
 
@@ -79,29 +79,30 @@
         max-width: 687px;
         margin-left: 24px;
 
-        picture {
-            max-width: 64px;
-            max-height: 64px;
-            margin-right: 24px;
+        &.about__person {
+            picture {
+                max-width: 64px;
+                max-height: 64px;
+                margin-right: 24px;
 
-            img {
-
-                border-radius: 50%;
+                .ava {
+                    border-radius: 50%;
+                }
             }
-        }
 
-        p {
-            margin: 12px 0;
-            font-size: 16px;
-            line-height: 19px;
-            color: #d4d4d4;
-        }
+            p {
+                margin: 12px 0;
+                font-size: 16px;
+                line-height: 19px;
+                color: #d4d4d4;
+            }
 
-        .change__profile {
-            font-size: 16px;
-            line-height: 19px;
-            text-decoration-line: underline;
-            color: var(--red);
+            .change__profile {
+                font-size: 16px;
+                line-height: 19px;
+                text-decoration-line: underline;
+                color: var(--red);
+            }
         }
     }
 
@@ -251,4 +252,71 @@
             }
         }
     }
+
+    /* Order State */
+    &.track {
+        .dashboard__content {
+            max-width: unset;
+            width: 100%;
+
+            &_text {
+                width: 100%;
+            }
+        }
+
+        .order__header {
+            h3 {
+                margin-right: 10px;
+            }
+        }
+
+        .state__order {
+            height: 32px;
+            font-size: 20px;
+            line-height: 24px;
+            background: #f7e0e1;
+            padding: 4px 8px;
+            color: var(--red);
+            white-space: nowrap;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+        }
+
+        .state__payed {
+            font-size: 16px;
+            line-height: 24px;
+
+            .payed__amount {
+                color: var(--red);
+            }
+        }
+
+        .order__table {
+            padding: 24px;
+            background: #f9f8f8;
+        }
+
+        .dashboard__content {
+            picture {
+                margin-right: 16px;
+            }
+
+            .order {
+                margin-top: 12px;
+
+                h3 {
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+    /* Order State */
 }

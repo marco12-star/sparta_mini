@@ -19,7 +19,7 @@
 
             <!-- Dashboard -->
 
-            <section class="dashboard state">
+            <section class="dashboard track">
                 <div class="container">
                     <div class="breadcrumbs flex">
                         <a href="index.html">Главная</a>/Личный кабинет
@@ -34,39 +34,41 @@
                                 <li><a href="dashboard.html">Личный кабинет</a></li>
                                 <li><a href="profile.html">Мой профиль</a></li>
                                 <li><a href="changes.html">Изменить регистрационные данные</a></li>
-                                <li class="active"><a href="state.html">Состояние заказов</a></li>
-                                <li><a href="state_order.html">Узнать статус заказа</a></li>
+                                <li><a href="state.html">Состояние заказов</a></li>
+                                <li class="active"><a href="tracking.html">Узнать статус заказа</a></li>
                             </ul>
                         </aside>
                         <div class="dashboard__content flex">
                             <div class="dashboard__content_text">
-                                <h2>Заказы в статусе «получен, на рассмотрении»</h2>
-
                                 <div class="order__table">
                                     <div class="order__item">
-                                        <div class="order__header">
-                                            <span>Заказ им007674-21 от 22.06.2021</span>
-                                            <a href="#">Отменить заказ</a>
-                                        </div>
-                                        <div class="order__body">
-                                            <div>
-                                                <span>Сумма заказа: </span> 5 332 ₽
+                                        <div class="order__header flex alicentr justcontbetween">
+                                            <div class="flex">
+                                                <h3>Заказ им007674-21 от 22.06.2021</h3>
+                                                <div class="state__order">Передано в доставку</div>
                                             </div>
-                                            <div>
-                                                <span>Оплачен: </span> Нет
-                                            </div>
-                                            <div>
-                                                <span>Способ оплаты: </span> Банковская карта
+                                            <div class="state__payed">
+                                                <span class="payed__amount">
+                                                    900 ₽
+                                                </span>
+                                                оплачено
                                             </div>
                                         </div>
-                                        <div class="order__footer">
-                                            <h3>Состав заказа:</h3>
-                                            <ol class="order__product">
-                                                <li>
-                                                    <a href="#">Брюки тренировочные Найк сезон 2021-2022 <span
-                                                            class="order__quanity">(1 шт)</span></a>
-                                                </li>
-                                            </ol>
+                                        <div class="orders">
+                                            <div class="order flex">
+                                                <img src="../../img/thumb.png" alt="">
+                                                <div class="order__info">
+                                                    <h3>Доставка курьером</h3>
+                                                    <p>Будет доставлено 14 июля с 10:00 до 18:00</p>
+                                                </div>
+                                            </div>
+                                            <div class="order flex">
+                                                <img src="../../img/thumb.png" alt="">
+                                                <div class="order__info">
+                                                    <h3>Доставка курьером</h3>
+                                                    <p>Будет доставлено 14 июля с 10:00 до 18:00</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

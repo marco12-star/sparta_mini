@@ -1255,6 +1255,8 @@ h6 {
   /* Profile */
   /* Changes */
   /* State */
+  /* Order State */
+  /* Order State */
 }
 
 .dashboard h1 {
@@ -1272,13 +1274,13 @@ h6 {
   line-height: 24px;
 }
 
-.dashboard .dashboard__menu {
+.dashboard__menu {
   list-style: none;
   padding: 0;
   margin-top: 24px;
 }
 
-.dashboard .dashboard__wrap {
+.dashboard__wrap {
   margin-top: 32px;
 }
 
@@ -1320,24 +1322,24 @@ h6 {
   margin-left: 24px;
 }
 
-.dashboard__content picture {
+.dashboard__content.about__person picture {
   max-width: 64px;
   max-height: 64px;
   margin-right: 24px;
 }
 
-.dashboard__content picture img {
+.dashboard__content.about__person picture .ava {
   border-radius: 50%;
 }
 
-.dashboard__content p {
+.dashboard__content.about__person p {
   margin: 12px 0;
   font-size: 16px;
   line-height: 19px;
   color: #d4d4d4;
 }
 
-.dashboard__content .change__profile {
+.dashboard__content.about__person .change__profile {
   font-size: 16px;
   line-height: 19px;
   -webkit-text-decoration-line: underline;
@@ -1504,6 +1506,70 @@ h6 {
 .dashboard.state .order__footer li a {
   display: inline;
   color: var(--red);
+}
+
+.dashboard.track .dashboard__content {
+  max-width: unset;
+  width: 100%;
+}
+
+.dashboard.track .dashboard__content_text {
+  width: 100%;
+}
+
+.dashboard.track .order__header h3 {
+  margin-right: 10px;
+}
+
+.dashboard.track .state__order {
+  height: 32px;
+  font-size: 20px;
+  line-height: 24px;
+  background: #f7e0e1;
+  padding: 4px 8px;
+  color: var(--red);
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 10px;
+}
+
+.dashboard.track .state__payed {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.dashboard.track .state__payed .payed__amount {
+  color: var(--red);
+}
+
+.dashboard.track .order__table {
+  padding: 24px;
+  background: #f9f8f8;
+}
+
+.dashboard.track .dashboard__content picture {
+  margin-right: 16px;
+}
+
+.dashboard.track .dashboard__content .order {
+  margin-top: 12px;
+}
+
+.dashboard.track .dashboard__content .order h3 {
+  margin-bottom: 5px;
+}
+
+.dashboard.track .dashboard__content .order p {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 @media all and (max-width: 1300px) {
@@ -1918,6 +1984,32 @@ h6 {
             transform: rotate(-45deg);
     position: absolute;
   }
+
+  /* Tracing 992px */
+
+  .track .order__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .track .order__header .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .track .order__header .state__order {
+    margin: 10px 0;
+  }
 }
 
 @media all and (max-width: 767px) {
@@ -2221,11 +2313,17 @@ h6 {
 
   .dashboard {
     /* State */
+    /* Tracking */
   }
 
   .dashboard h2 {
     font-size: 21px;
     line-height: 25px;
+  }
+
+  .dashboard .dashboard h3 {
+    font-size: 17px;
+    line-height: 21px;
   }
 
   .dashboard .dashboard__wrap {
@@ -2252,6 +2350,15 @@ h6 {
 
   .dashboard.state .order__table {
     padding: 15px;
+  }
+
+  .dashboard.track .order__table {
+    padding: 15px;
+  }
+
+  .dashboard.track .dashboard__content .order p {
+    font-size: 14px;
+    line-height: 20px;
   }
 
   /* Dashboard */

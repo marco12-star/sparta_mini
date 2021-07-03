@@ -382,6 +382,24 @@
 			}
 		}
 	}
+
+	/* Tracing 992px */
+
+	.track {
+		.order__header {
+			flex-direction: column;
+			align-items: flex-start;
+
+			.flex {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+
+			.state__order {
+				margin: 10px 0;
+			}
+		}
+	}
 }
 
 @media all and (max-width: 767px) {
@@ -694,6 +712,11 @@
 			line-height: 25px;
 		}
 
+		.dashboard h3 {
+			font-size: 17px;
+			line-height: 21px;
+		}
+
 		.dashboard__wrap {
 			flex-direction: column;
 
@@ -717,6 +740,18 @@
 		&.state {
 			.order__table {
 				padding: 15px;
+			}
+		}
+
+		/* Tracking */
+		&.track {
+			.order__table {
+				padding: 15px;
+			}
+
+			.dashboard__content .order p {
+				font-size: 14px;
+				line-height: 20px;
 			}
 		}
 	}
