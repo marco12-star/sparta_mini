@@ -1248,6 +1248,14 @@ h6 {
   margin-right: 7px;
 }
 
+.tickets {
+  padding: 25px 0;
+}
+
+.simplebar-content-wrapper {
+  background: #000;
+}
+
 .breadcrumbs {
   font-size: 16px;
   line-height: 19px;
