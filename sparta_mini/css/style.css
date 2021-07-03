@@ -1113,18 +1113,9 @@ h6 {
           animation: bannermove 10s linear infinite;
 }
 
-.photobanner:hover {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
-}
-
 .photobanner a {
   margin: 0 20px;
   opacity: 0.7;
-}
-
-.photobanner a:hover {
-  opacity: 1;
 }
 
 @-webkit-keyframes bannermove {

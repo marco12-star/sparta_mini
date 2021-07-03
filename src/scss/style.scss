@@ -666,17 +666,9 @@ h6 {
 	white-space: nowrap;
 	animation: bannermove 10s linear infinite;
 
-	&:hover {
-		animation-play-state: paused;
-	}
-
 	a {
 		margin: 0 20px;
 		opacity: .7;
-
-		&:hover {
-			opacity: 1;
-		}
 	}
 }
 
