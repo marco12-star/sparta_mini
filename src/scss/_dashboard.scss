@@ -21,6 +21,16 @@
         line-height: 36px;
     }
 
+    h2 {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
     .dashboard__menu {
         list-style: none;
         padding: 0;
@@ -80,11 +90,6 @@
             }
         }
 
-        h2 {
-            font-size: 24px;
-            line-height: 29px;
-        }
-
         p {
             margin: 12px 0;
             font-size: 16px;
@@ -127,6 +132,7 @@
 
         .dashboard__content_text {
             max-width: 566px;
+
             input {
                 width: 100%;
                 margin-bottom: 16px;
@@ -182,6 +188,65 @@
                     &:hover {
                         filter: brightness(1.1);
                     }
+                }
+            }
+        }
+    }
+
+    /* State */
+
+    &.state {
+        .order__table {
+            max-width: 614px;
+            margin-top: 12px;
+            padding: 24px;
+            background: #f9f8f8;
+        }
+
+        .order__header {
+            padding-bottom: 12px;
+            font-size: 20px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #c7c7c7;
+
+            span {
+                margin-right: 5px;
+            }
+
+            a {
+                color: var(--red);
+                font-size: 16px;
+                line-height: 24px;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        .order__body {
+            margin: 12px 0;
+            font-size: 16px;
+            line-height: 24px;
+
+            span {
+                color: rgba(41, 37, 37, .3);
+            }
+        }
+
+        .order__footer {
+            h3 {
+                margin-bottom: 5px;
+            }
+
+            li {
+                a {
+                    display: inline;
+                    color: var(--red);
                 }
             }
         }

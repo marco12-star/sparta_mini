@@ -19,7 +19,7 @@
 
             <!-- Dashboard -->
 
-            <section class="dashboard changes">
+            <section class="dashboard state">
                 <div class="container">
                     <div class="breadcrumbs flex">
                         <a href="index.html">Главная</a>/Личный кабинет
@@ -33,33 +33,43 @@
                             <ul class="dashboard__menu">
                                 <li><a href="dashboard.html">Личный кабинет</a></li>
                                 <li><a href="profile.html">Мой профиль</a></li>
-                                <li class="active"><a href="changes.html">Изменить регистрационные данные</a></li>
-                                <li><a href="state.html">Состояние заказов</a></li>
+                                <li><a href="changes.html">Изменить регистрационные данные</a></li>
+                                <li class="active"><a href="state.html">Состояние заказов</a></li>
                                 <li><a href="state_order.html">Узнать статус заказа</a></li>
                             </ul>
                         </aside>
                         <div class="dashboard__content flex">
                             <div class="dashboard__content_text">
-                                <form action="#">
-                                    <input type="email" placeholder="Эл. почта">
-                                    <input type="text" placeholder="Фамилия">
-                                    <input type="text" placeholder="Имя">
-                                    <input type="text" placeholder="Отчество">
-                                    <input type="text" placeholder="Номер телефона">
-                                    <div class="input__wrap">
-                                        <input type="text" placeholder="Дом*">
-                                        <input type="text" placeholder="Строение">
-                                        <input type="text" placeholder="Корпус">
-                                        <input type="text" placeholder="Кв./Офис">
+                                <h2>Заказы в статусе «получен, на рассмотрении»</h2>
+
+                                <div class="order__table">
+                                    <div class="order__item">
+                                        <div class="order__header">
+                                            <span>Заказ им007674-21 от 22.06.2021</span>
+                                            <a href="#">Отменить заказ</a>
+                                        </div>
+                                        <div class="order__body">
+                                            <div>
+                                                <span>Сумма заказа: </span> 5 332 ₽
+                                            </div>
+                                            <div>
+                                                <span>Оплачен: </span> Нет
+                                            </div>
+                                            <div>
+                                                <span>Способ оплаты: </span> Банковская карта
+                                            </div>
+                                        </div>
+                                        <div class="order__footer">
+                                            <h3>Состав заказа:</h3>
+                                            <ol class="order__product">
+                                                <li>
+                                                    <a href="#">Брюки тренировочные Найк сезон 2021-2022 <span
+                                                            class="order__quanity">(1 шт)</span></a>
+                                                </li>
+                                            </ol>
+                                        </div>
                                     </div>
-                                    <h2>Смена пароля</h2>
-                                    <input type="text" placeholder="Новый пароль">
-                                    <input type="text" placeholder="Подтверждение пароля">
-                                    <div class="button__wrap">
-                                        <button>Сбросить</button>
-                                        <button>Сохранить</button>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>

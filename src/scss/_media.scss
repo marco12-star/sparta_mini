@@ -689,6 +689,11 @@
 	/* Dashboard */
 
 	.dashboard {
+		h2 {
+			font-size: 21px;
+			line-height: 25px;
+		}
+
 		.dashboard__wrap {
 			flex-direction: column;
 
@@ -706,7 +711,17 @@
 				margin-bottom: 25px;
 			}
 		}
+
+		/* State */
+
+		&.state {
+			.order__table {
+				padding: 15px;
+			}
+		}
 	}
+
+
 
 	/* Dashboard */
 }
