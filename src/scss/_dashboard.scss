@@ -65,22 +65,19 @@
         }
     }
 
-    .dashboard__content {
+    &__content {
         max-width: 687px;
         margin-left: 24px;
 
         picture {
             max-width: 64px;
             max-height: 64px;
+            margin-right: 24px;
 
             img {
 
                 border-radius: 50%;
             }
-        }
-
-        .dashboard__content_text {
-            margin-left: 24px;
         }
 
         h2 {
@@ -100,6 +97,93 @@
             line-height: 19px;
             text-decoration-line: underline;
             color: var(--red);
+        }
+    }
+
+    /* Profile */
+    &.profile {
+
+        .profile__data {
+            p {
+                font-size: 18px;
+                line-height: 32px;
+                color: var(--textColor);
+                user-select: none;
+
+                span {
+                    color: rgba(41, 37, 37, 0.3);
+                }
+
+            }
+        }
+    }
+
+    /* Changes */
+
+    &.changes {
+        h2 {
+            margin-bottom: 12px;
+        }
+
+        .dashboard__content_text {
+            max-width: 566px;
+            input {
+                width: 100%;
+                margin-bottom: 16px;
+                padding: 16px 12px;
+                background: #f4f4f4;
+                border: none;
+                font-size: 12px;
+                line-height: 16px;
+
+                &::placeholder {
+                    opacity: 0.3;
+                }
+            }
+
+            .input__wrap {
+                display: flex;
+                margin-bottom: 24px;
+
+                input {
+                    margin-left: 8px;
+                    margin-bottom: 0;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+
+        .button__wrap {
+            display: flex;
+            justify-content: space-between;
+
+            button {
+                width: 49%;
+                padding: 12px 0;
+                text-align: center;
+
+                &:first-child {
+                    background: var(--pink);
+                    color: var(--red);
+
+                    &:hover {
+                        background: var(--red);
+                        color: #fff;
+                    }
+                }
+
+                &:last-child {
+                    background: var(--red);
+                    color: #fff;
+
+                    &:hover {
+                        filter: brightness(1.1);
+                    }
+                }
+            }
         }
     }
 }

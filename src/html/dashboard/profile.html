@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru"> 
+<html lang="ru">
 
-<head> 
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/normalize.min.css" />
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="../../css/normalize.min.css" />
+    <link rel="stylesheet" href="../../css/style.min.css" />
 
     <script src="js/script.min.js" defer></script>
     <title>Gulp</title>
@@ -14,36 +14,43 @@
 
 <body>
     <main class="content__wrapper">
-        @@include('./templates/_header-profile.html')
+        @@include('../../templates/_header-profile.html')
         <div class="content__slide">
 
             <!-- Dashboard -->
 
-            <section class="dashboard">
+            <section class="dashboard profile">
                 <div class="container">
                     <div class="breadcrumbs flex">
-                        <a href="index.html">Главная</a>/Личный кабинет
+                        <a href="index.html">Главная</a>/Данные профиля
                     </div>
                     <h1>Личный Кабинет</h1>
                     <div class="dashboard__wrap flex">
                         <aside class="dashboard__sidebar">
-                            <a href="#" class="flex alicentr get_status"> <img src="./img/icons/spartak.svg"> Получить статус</a>
+                            <a href="#" class="flex alicentr get_status"> <img src="../../img/icons/spartak.svg"> Получить
+                                статус</a>
                             <ul class="dashboard__menu">
-                                <li class="active"><a href="dashboard.html">Личный кабинет</a></li>
-                                <li><a href="profile.html">Мой профиль</a></li>
-                                <li><a href="#">Изменить регистрационные данные</a></li>
+                                <li><a href="dashboard.html">Личный кабинет</a></li>
+                                <li class="active"><a href="profile.html">Мой профиль</a></li>
+                                <li><a href="changes.html">Изменить регистрационные данные</a></li>
                                 <li><a href="#">Состояние заказов</a></li>
                                 <li><a href="#">Узнать статус заказа</a></li>
                             </ul>
                         </aside>
                         <div class="dashboard__content flex">
-                            <img src="./img/ava.png" alt="">
                             <div class="dashboard__content_text">
-                                <h2>Здравствуйте, <span>Иван!</span></h2>
-                                <p>В личном кабинете Вы можете проверить ход выполнения Ваших заказов, просмотреть или
-                                    изменить личную информацию, а также подписаться
-                                    на новости и другие информационные рассылки.</p>
-                                <a href="#" class="change__profile">Изменить профиль</a>
+                                <h2>Данные профиля</h2>
+                                <div class="profile__data">
+                                    <p>
+                                        <span>Имя: </span> Иван Иванов
+                                    </p>
+                                    <p>
+                                        <span>Эл.адрес: </span> that.misusing@gmail.com
+                                    </p>
+                                    <p>
+                                        <span>Телефон: </span> +71234567890
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -52,7 +59,7 @@
 
             <!-- Dashboard -->
 
-            @@include('./templates/_footer.html')
+            @@include('../../templates/_footer-profile.html')
         </div>
     </main>
     <!-- Jquery -->
@@ -63,7 +70,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"
         integrity="sha512-3fMsI1vtU2e/tVxZORSEeuMhXnT9By80xlmXlsOku7hNwZSHJjwcOBpmy+uu+fyWwGCLkMvdVbHkeoXdAzBv+w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="JS/main.js"></script>
+    <script src="../../js/script.js"></script>
 </body>
 
 </html>

@@ -181,6 +181,16 @@ h6 {
 		position: relative;
 		padding: 0 20px;
 
+		&:hover {
+			img {
+				transform: none;
+			}
+
+			svg path:last-child {
+				transform: translateX(2px);
+			}
+		}
+
 		span {
 			color: var(--red);
 			text-decoration: underline;
@@ -199,13 +209,10 @@ h6 {
 				border-radius: 8px;
 			}
 
-			&:after {
-				content: '';
-				display: block;
-				width: 11px;
-				height: 12px;
+			svg {
+				width: 14px;
+				height: 13px;
 				margin-left: 4px;
-				background: url(./../img/icons/out.svg) 100%/cover no-repeat;
 			}
 		}
 	}

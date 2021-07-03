@@ -12,7 +12,7 @@ const path = {
 		fonts: project_folder + '/fonts/',
 	},
 	src: {
-		html: [source_folder + '/*.html', '!' + source_folder + '/**/_*.html'],
+		html: [source_folder + '/**/*.html', '!' + source_folder + '/**/_*.html'],
 		css: [source_folder + '/scss/*.scss', '!' + source_folder + '/_*.scss'],
 		js: source_folder + '/js/script.js',
 		img: source_folder + '/img/**/*.{jpg,png,svg,gif,ico,webp}',
