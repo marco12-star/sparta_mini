@@ -2,6 +2,7 @@
 @import './flex';
 @import './media';
 @import './fonts';
+@import './reset';
 
 @import './modules/header';
 @import './modules/footer';
@@ -74,22 +75,10 @@ nav {
 	}
 }
 
-/* Configure */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 400;
+}
 
-/* ################# Header ################# */
-
-/* ################# Header ################# */
-/* City */
-/* City */
-/* Top Menu */
-/* Top Menu */
-/* Header Contact */
-/* Header Contact */
-/* Bottom Menu */
-/* Bottom Menu */
-/* Social Menu */
-/* Social Menu */
-/* ################# Header ################# */
 .sticky {
 	position: fixed;
 	top: 0;
@@ -436,10 +425,17 @@ nav {
 	}
 
 	.slick-slide {
-		img {
+		a {
+			display: flex;
+		}
+		picture {
 			width: 100%;
 			height: 100%;
 			object-fit: contain;
+
+			img {
+				width: 100%;
+			}
 		}
 	}
 }
@@ -617,6 +613,7 @@ nav {
 	position: relative;
 	overflow: hidden;
 	background: #F4F4F4;
+	transition: unset;
 }
 
 .partners * {
@@ -718,3 +715,5 @@ nav {
 		}
 	}
 }
+
+@import './dashboard';

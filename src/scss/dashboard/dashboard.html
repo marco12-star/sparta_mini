@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+
+    <script src="js/script.min.js" defer></script>
+    <title>Gulp</title>
+</head>
+
+<body>
+    <main class="content__wrapper">
+        @@include('./templates/_header.html')
+        <div class="content__slide">
+
+            <!-- Dashboard -->
+
+            <section class="dashboard">
+                <div class="container">
+                    <div class="breadcrumbs flex">
+                        <a href="index.html">Главная</a>/Личный кабинет
+                    </div>
+                    <h1>Личный Кабинет</h1>
+                    <div class="dashboard__wrap flex">
+                        <aside class="dashboard__sidebar">
+                            <a href="#" class="flex alicentr get_status"> <img src="./img/icons/spartak.svg"> Получить статус</a>
+                            <ul class="dashboard__menu">
+                                <li class="active"><a href="#">Личный кабинет</a></li>
+                                <li><a href="#">Мой профиль</a></li>
+                                <li><a href="#">Изменить регистрационные данные</a></li>
+                                <li><a href="#">Состояние заказов</a></li>
+                                <li><a href="#">Узнать статус заказа</a></li>
+                            </ul>
+                        </aside>
+                        <div class="dashboard__content flex">
+                            <img src="./img/ava.png" alt="">
+                            <div class="dashboard__content_text">
+                                <h2>Здравствуйте, <span>Иван!</span></h2>
+                                <p>В личном кабинете Вы можете проверить ход выполнения Ваших заказов, просмотреть или
+                                    изменить личную информацию, а также подписаться
+                                    на новости и другие информационные рассылки.</p>
+                                <a href="#" class="change__profile">Изменить профиль</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dashboard -->
+
+            @@include('./templates/_footer.html')
+        </div>
+    </main>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Jquery Migrate -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"
+        integrity="sha512-3fMsI1vtU2e/tVxZORSEeuMhXnT9By80xlmXlsOku7hNwZSHJjwcOBpmy+uu+fyWwGCLkMvdVbHkeoXdAzBv+w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+.breadcrumbs {
+    font-size: 16px;
+    line-height: 19px;
+    color: #9ea3aa;
+    margin-bottom: 12px;
+
+    a {
+        color: #9ea3aa;
+
+        &:hover {
+            color: var(--red);
+        }
+    }
+}
+
+.dashboard {
+    padding: 35px 0;
+
+    h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .dashboard__menu {
+        list-style: none;
+        padding: 0;
+        margin-top: 24px;
+    }
+
+
+    .dashboard__wrap {
+        margin-top: 32px;
+    }
+
+    .dashboard__sidebar {
+        max-width: 212px;
+
+        .active {
+            border-left: 2px solid var(--red);
+            background: var(--pink);
+
+            a {
+                color: var(--red);
+            }
+        }
+
+        a {
+            width: 100%;
+            padding: 13px 10px;
+            font-size: 16px;
+            line-height: 20px;
+
+            &:hover {
+                background: var(--pink);
+                color: var(--red);
+            }
+        }
+
+        .get_status {
+            padding: 13px;
+
+            picture {
+                margin-right: 11px;
+            }
+        }
+    }
+
+    .dashboard__content {
+        max-width: 687px;
+        margin-left: 24px;
+
+        picture {
+            max-width: 64px;
+            max-height: 64px;
+
+            img {
+
+                border-radius: 50%;
+            }
+        }
+
+        .dashboard__content_text {
+            margin-left: 24px;
+        }
+
+        h2 {
+            font-size: 24px;
+            line-height: 29px;
+        }
+
+        p {
+            margin: 12px 0;
+            font-size: 16px;
+            line-height: 19px;
+            color: #d4d4d4;
+        }
+
+        .change__profile {
+            font-size: 16px;
+            line-height: 19px;
+            text-decoration-line: underline;
+            color: var(--red);
+        }
+    }
+}
