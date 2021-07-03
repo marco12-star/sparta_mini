@@ -1121,8 +1121,8 @@ h6 {
   left: 0px;
   overflow: hidden;
   white-space: nowrap;
-  -webkit-animation: scroll 22s linear infinite;
-          animation: scroll 22s linear infinite;
+  -webkit-animation: bannermove 31s linear infinite;
+          animation: bannermove 31s linear infinite;
   -webkit-transition: unset;
   -o-transition: unset;
   transition: unset;
@@ -1145,37 +1145,27 @@ h6 {
   opacity: 1;
 }
 
-/* @keyframes bannermove {
-	0% {
-		transform: translate(0, 0);
-	}
-
-	100% {
-		transform: translate(-50%, 0);
-	}
-} */
-
-@-webkit-keyframes scroll {
+@-webkit-keyframes bannermove {
   0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 
   100% {
-    -webkit-transform: translateX(calc(-250px * 7));
-            transform: translateX(calc(-250px * 7));
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
   }
 }
 
-@keyframes scroll {
+@keyframes bannermove {
   0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 
   100% {
-    -webkit-transform: translateX(calc(-250px * 7));
-            transform: translateX(calc(-250px * 7));
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
   }
 }
 

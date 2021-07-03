@@ -670,7 +670,7 @@ h6 {
 	left: 0px;
 	overflow: hidden;
 	white-space: nowrap;
-	animation: scroll 22s linear infinite;
+	animation: bannermove 31s linear infinite;
 	transition: unset;
 
 	&:hover {
@@ -688,7 +688,7 @@ h6 {
 	}
 }
 
-/* @keyframes bannermove {
+@keyframes bannermove {
 	0% {
 		transform: translate(0, 0);
 	}
@@ -696,11 +696,6 @@ h6 {
 	100% {
 		transform: translate(-50%, 0);
 	}
-} */
-
-@keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7))}
 }
 
 .footer__bottom {
