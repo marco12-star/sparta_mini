@@ -28,7 +28,6 @@ span {
 * {
 	font-family: 'NoirPro', sans-serif;
 	color: var(--textColor);
-	transition: .2s ease;
 
 	&:focus {
 		outline: none;
@@ -658,11 +657,6 @@ h6 {
 	position: relative;
 	overflow: hidden;
 	background: #F4F4F4;
-	transition: unset;
-}
-
-.partners * {
-	transition: unset;
 }
 
 .photobanner {
@@ -671,7 +665,6 @@ h6 {
 	overflow: hidden;
 	white-space: nowrap;
 	animation: bannermove 31s linear infinite;
-	transition: unset;
 
 	&:hover {
 		animation-play-state: paused;

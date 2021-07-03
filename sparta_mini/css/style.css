@@ -402,9 +402,6 @@ span {
 * {
   font-family: "NoirPro", sans-serif;
   color: var(--textColor);
-  -webkit-transition: 0.2s ease;
-  -o-transition: 0.2s ease;
-  transition: 0.2s ease;
 }
 
 *:focus {
@@ -1105,15 +1102,6 @@ h6 {
   position: relative;
   overflow: hidden;
   background: #F4F4F4;
-  -webkit-transition: unset;
-  -o-transition: unset;
-  transition: unset;
-}
-
-.partners * {
-  -webkit-transition: unset;
-  -o-transition: unset;
-  transition: unset;
 }
 
 .photobanner {
@@ -1123,9 +1111,6 @@ h6 {
   white-space: nowrap;
   -webkit-animation: bannermove 31s linear infinite;
           animation: bannermove 31s linear infinite;
-  -webkit-transition: unset;
-  -o-transition: unset;
-  transition: unset;
 }
 
 .photobanner:hover {
