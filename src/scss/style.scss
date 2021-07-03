@@ -664,7 +664,7 @@ h6 {
 	left: 0px;
 	overflow: hidden;
 	white-space: nowrap;
-	animation: bannermove 31s linear infinite;
+	animation: bannermove 10s linear infinite;
 
 	&:hover {
 		animation-play-state: paused;
@@ -673,7 +673,6 @@ h6 {
 	a {
 		margin: 0 20px;
 		opacity: .7;
-		transition: .2s ease;
 
 		&:hover {
 			opacity: 1;
