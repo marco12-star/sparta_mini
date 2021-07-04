@@ -46,7 +46,6 @@ if ($('.academy__form_wrap').hasClass('coach_tab')) {
     $('#remainSteps').html('10')
 }
 
-document.getElementById('loadAva').addEventListener('change', readURL, true);
 
 function readURL() {
     var file = document.getElementById("loadAva").files[0];

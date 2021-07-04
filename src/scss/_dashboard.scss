@@ -81,14 +81,24 @@
         margin-left: 24px;
 
         &.about__person {
-            picture {
-                max-width: 64px;
-                max-height: 64px;
-                margin-right: 24px;
 
-                .ava {
-                    border-radius: 50%;
-                }
+            .user-info-avatar {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-width: 64px;
+                height: 64px;
+                margin-right: 24px;
+                border-radius: 50%;
+                background: #DBDBDB;
+                font-size: 24px;
+                line-height: 29px;
+                color: #a19f9f;
+                user-select: none;
+            }
+
+            .user-info-name {
+                display: inline-block;
             }
 
             p {
