@@ -40,6 +40,12 @@ $('[name=academyType]').on('change', function () {
     }
 });
 
+if ($('.academy__form_wrap').hasClass('coach_tab')) {
+    $('#remainSteps').html('8')
+} else {
+    $('#remainSteps').html('10')
+}
+
 document.getElementById('loadAva').addEventListener('change', readURL, true);
 
 function readURL() {
