@@ -150,7 +150,7 @@
                                     </label>
                                 </div>
                                 <button type="submit">Далее</button>
-                                <a href="coach_2.html" style="margin-top: 25px;">Следующий шаг</a>
+                                <a href="coach_2.html" style="margin-top: 25px;" id="nextStep">Следующий шаг</a>
                             </form>
                         </div>
                     </div>
@@ -190,7 +190,7 @@
             }
         });
 
-
+        /* Loada Avatar */
         document.getElementById('loadAva').addEventListener('change', readURL, true);
 
         function readURL() {
@@ -204,6 +204,20 @@
                 reader.readAsDataURL(file);
             }
         }
+        
+        /* Next Steps */
+        const nextStep = $('#nextStep')
+
+        $('#student').on('change', function () {
+            nextStep.attr("href", 'student_2.html')
+        });
+        $('#coach').on('change', function () {
+            nextStep.attr("href", 'coach_2.html')
+        });
+        $('#player').on('change', function () {
+            nextStep.attr("href", 'player_2.html')
+        });
+
     </script>
 </body>
 

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../../css/normalize.min.css" />
+    <link rel="stylesheet" href="../../css/style.min.css" />
+    <title>Gulp</title>
+</head>
+
+<body>
+    <main class="content__wrapper">
+        @@include('../../templates/_header-profile.html')
+        <div class="content__slide">
+
+            <!-- Academy -->
+
+            <section class="dashboard academy">
+                <div class="container">
+                    <div class="breadcrumbs flex">
+                        <a href="index.html">Главная</a>/Личный кабинет
+                    </div>
+                    <h1>Личный Кабинет</h1>
+                    <div class="dashboard__wrap flex">
+                        <aside class="dashboard__sidebar">
+                            <a href="academy.html" class="active flex alicentr get_status">
+                                <img src="../../img/icons/spartak.svg">
+                                Получить статус
+                            </a>
+                            <ul class="dashboard__menu">
+                                <li><a href="../dashboard/dashboard.html">Личный кабинет</a></li>
+                                <li><a href="../dashboard/profile.html">Мой профиль</a></li>
+                                <li><a href="../dashboard/changes.html">Изменить регистрационные данные</a></li>
+                                <li><a href="../dashboard/state.html">Состояние заказов</a></li>
+                                <li><a href="../dashboard/tracking.html">Узнать статус заказа</a></li>
+                            </ul>
+                        </aside>
+
+                        <div class="dashboard__content">
+                            <div class="dashboard__content_header flex alibaseline justcontbetween">
+                                <h2>Заполните анкетные данные, чтобы оставить заявку </h2>
+                                <div class="steps">
+                                    Шаг <span id="currentStep">4</span> из <span id="remainSteps">8</span>
+                                </div>
+                            </div>
+                            <form action="#" class="academy__form">
+                                <h3>АНТРОПОМЕТРИЧЕСКИЕ ДАННЫЕ</h3>
+                                <div class="academy__form_wrap flex coach_tab on">
+                                    <div>
+                                        <input type="text" placeholder="РОСТ">
+                                        <input type="text" placeholder="ВЕС">
+                                        <input type="text" placeholder="РАЗМЕР НОГИ">
+                                        <input type="text" placeholder="ВЕДУЩАЯ НОГА">
+                                        <h3>ЗАБОЛЕВАНИЯ</h3>
+                                        <input type="text" placeholder="ЗАПОЛНИТЕ ПОЛЕ">
+                                        <h3>ТРАВМЫ</h3>
+                                        <input type="text" placeholder="ЗАПОЛНИТЕ ПОЛЕ">
+                                    </div>
+                                    <div>
+                                        <input type="text" placeholder="РАЗМЕР ОБУВИ">
+                                        <input type="text" placeholder="РАЗМЕР ОДЕЖДЫ РФ">
+                                        <input type="text" placeholder="РАЗМЕР ОДЕЖДЫ EU">
+                                    </div>
+                                </div>
+                                <div class="academy__form_legal flex">
+                                    <input type="checkbox" id="legalConcent" checked>
+                                    <label for="legalConcent" class="flex alibaseline">
+                                        <div class="concent_box"></div>
+                                        Я даю акционерному обществу футбольный клуб «спартак-москва» свое согласие на
+                                        обработку моих персональных данных, в соответствии
+                                        с федеральным законом от 27.07.2006 года
+                                    </label>
+                                </div>
+                                <button type="submit">Далее</button>
+                                <a href="student_3.html" style="margin-top: 25px; margin-right: 15px;">Предыдущий шаг</a>
+                                <a href="student_5.html" style="margin-top: 25px;">Следующий шаг</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Academy -->
+
+            @@include('../../templates/_footer-profile.html')
+        </div>
+    </main>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Jquery Migrate -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"
+        integrity="sha512-3fMsI1vtU2e/tVxZORSEeuMhXnT9By80xlmXlsOku7hNwZSHJjwcOBpmy+uu+fyWwGCLkMvdVbHkeoXdAzBv+w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../../js/script.min.js"></script>
+</body>
+
+</html>
