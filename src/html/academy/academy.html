@@ -41,7 +41,7 @@
                         </aside>
 
                         <div class="dashboard__content">
-                            <div class="dashboard__content_header flex alicentr justcontbetween">
+                            <div class="dashboard__content_header flex alibaseline justcontbetween">
                                 <h2>Заполните анкетные данные, чтобы оставить заявку </h2>
                                 <div class="steps">
                                     Шаг <span id="currentStep">1</span> из <span id="remainSteps">10</span>
@@ -152,6 +152,7 @@
                                     </label>
                                 </div>
                                 <button type="submit">Далее</button>
+                                <a href="coach_2.html" style="margin-top: 25px;">Следующий шаг</a>
                             </form>
                         </div>
                     </div>
@@ -172,6 +173,44 @@
         integrity="sha512-3fMsI1vtU2e/tVxZORSEeuMhXnT9By80xlmXlsOku7hNwZSHJjwcOBpmy+uu+fyWwGCLkMvdVbHkeoXdAzBv+w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../../js/script.js"></script>
+    <script>
+        if ($('.academy__form_wrap').hasClass('coach_tab')) {
+            $('#remainSteps').html('8')
+        } else {
+            $('#remainSteps').html('10')
+        }
+        /* Academy Tabs */
+
+        $('[name=academyType]').on('change', function () {
+            var p = $(this).prop('checked');
+
+            var i = $('[name=academyType]').index(this);
+
+            $('.academy__form_wrap').removeClass('on');
+            $('.academy__form_wrap').eq(i).addClass('on');
+
+            if ($('.academy__form_wrap').eq(i).hasClass('coach_tab')) {
+                $('#remainSteps').html('8')
+            } else {
+                $('#remainSteps').html('10')
+            }
+        });
+
+
+        document.getElementById('loadAva').addEventListener('change', readURL, true);
+
+        function readURL() {
+            var file = document.getElementById("loadAva").files[0];
+            var reader = new FileReader();
+            reader.onloadend = function () {
+                document.getElementById('loadAvaLabel').style.background = "url(" + reader.result +
+                    ") 100%/cover no-repeat";
+            }
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
 </body>
 
 </html>

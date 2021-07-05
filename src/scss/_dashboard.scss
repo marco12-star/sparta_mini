@@ -357,6 +357,7 @@
 
     h2 {
         margin-right: 10px;
+        margin-bottom: 34px;
     }
 
     .dashboard__content {
@@ -378,16 +379,17 @@
     }
 
     &__form {
+
+        h3 {
+            margin-bottom: 16px;
+        }
+
         &_wrap {
             display: none;
 
             &.on {
                 display: flex;
                 justify-content: space-between;
-            }
-
-            h3 {
-                margin-bottom: 16px;
             }
 
             div {
@@ -397,7 +399,6 @@
         }
 
         &_type {
-            margin-top: 34px;
             margin-bottom: 16px;
 
             label {

@@ -450,6 +450,12 @@
 			}
 		}
 	}
+
+	.academy {
+		.steps {
+			margin-bottom: 10px;
+		}
+	}
 }
 
 @media all and (max-width: 767px) {
@@ -625,9 +631,11 @@
 			label {
 				width: 100%;
 				margin-bottom: 10px;
+
 				&:last-child {
 					margin-right: 0;
 				}
+
 				&.loadAva {
 					width: 100px;
 					height: 100px;
@@ -842,8 +850,9 @@
 			}
 		}
 	}
+
 	/* Dashboard */
-	
+
 	.academy {
 		.dashboard__content {
 			padding: 15px;
