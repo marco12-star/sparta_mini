@@ -1345,7 +1345,7 @@ h6 {
   color: #d4d4d4;
 }
 
-.dashboard__content.about__person .change__profile {
+.dashboard .change__profile {
   font-size: 16px;
   line-height: 19px;
   -webkit-text-decoration-line: underline;
@@ -1606,6 +1606,10 @@ h6 {
 
 /* Academy */
 
+.academy {
+  /* Form Succes  */
+}
+
 .academy h2 {
   margin-right: 10px;
   margin-bottom: 34px;
@@ -1756,6 +1760,94 @@ h6 {
 
 .academy .add__input a:hover {
   text-decoration: underline;
+}
+
+.academy.success .success__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.academy.success .success__wrap_icon {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 24px;
+  background: var(--red);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+}
+
+.academy.success .dashboard__content {
+  max-width: 211px;
+  background: unset;
+  margin: 0;
+  padding: 0;
+}
+
+.academy.success .dashboard__content_text h4 {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.academy.success .dashboard__content_text p {
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 4px;
+}
+
+.academy.success .user-info-avatar {
+  min-width: 50px;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 24px;
+  margin-right: 12px;
+}
+
+.academy.success .change {
+  width: 16px;
+  height: 16px;
+}
+
+.academy.success .change:hover svg {
+  -webkit-transform: rotate(-15deg);
+      -ms-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+}
+
+.academy.hello .success__wrap img {
+  max-width: 82px;
+  max-height: 141px;
+}
+
+.academy.hello .success__wrap h2 {
+  font-size: 32px;
+  line-height: 38px;
+  margin: 0;
+  margin-top: 24px;
+}
+
+.academy.hello .success__wrap p {
+  font-size: 24px;
+  line-height: 29px;
+  color: #bfbebe;
+  margin-bottom: 16px;
 }
 
 /* Academy */
@@ -2645,6 +2737,27 @@ h6 {
 
   .academy .dashboard__content {
     padding: 15px;
+  }
+
+  .academy.success .academy__head {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .academy.success .academy__head .dashboard__content {
+    margin: 12px 0;
+  }
+
+  .academy.hello .success__wrap h2 {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .academy.hello .success__wrap p {
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 

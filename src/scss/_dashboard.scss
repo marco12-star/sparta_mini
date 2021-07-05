@@ -108,13 +108,15 @@
                 color: #d4d4d4;
             }
 
-            .change__profile {
-                font-size: 16px;
-                line-height: 19px;
-                text-decoration-line: underline;
-                color: var(--red);
-            }
+
         }
+    }
+
+    .change__profile {
+        font-size: 16px;
+        line-height: 19px;
+        text-decoration-line: underline;
+        color: var(--red);
     }
 
     /* Inputs */
@@ -503,11 +505,102 @@
             font-size: 12px;
             line-height: 16px;
             color: var(--red);
+
             &:hover {
                 text-decoration: underline;
             }
         }
     }
+
+    /* Form Succes  */
+
+    &.success {
+
+        .success__wrap {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            flex-direction: column;
+
+            &_icon {
+                width: 64px;
+                height: 64px;
+                margin-bottom: 24px;
+                background: var(--red);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+            }
+
+        }
+
+        .dashboard__content {
+            max-width: 211px;
+            background: unset;
+            margin: 0;
+            padding: 0;
+
+            &_text {
+                h4 {
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 19px;
+                    margin-top: 4px;
+                }
+            }
+        }
+
+
+        .user-info-avatar {
+            min-width: 50px;
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            line-height: 24px;
+            margin-right: 12px;
+        }
+
+        .change {
+            width: 16px;
+            height: 16px;
+
+            &:hover {
+                svg {
+                    transform: rotate(-15deg);
+                }
+            }
+        }
+
+    }
+
+    &.hello {
+        .success__wrap {
+            img {
+                max-width: 82px;
+                max-height: 141px;
+            }
+
+            h2 {
+                font-size: 32px;
+                line-height: 38px;
+                margin: 0;
+                margin-top: 24px;
+            }
+
+            p {
+                font-size: 24px;
+                line-height: 29px;
+                color: #bfbebe;
+                margin-bottom: 16px;
+            }
+        }
+    }
+
 
 
 }
