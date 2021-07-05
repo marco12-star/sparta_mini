@@ -2,6 +2,7 @@
 var bar = document.getElementById("bar")
 var html = document.querySelector('html')
 
+
 bar.addEventListener('click', function() {
     if (html.classList.contains('open_menu')) {
         html.classList.remove('open_menu')

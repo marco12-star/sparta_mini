@@ -7,8 +7,6 @@
 
     <link rel="stylesheet" href="../../css/normalize.min.css" />
     <link rel="stylesheet" href="../../css/style.min.css" />
-
-    <script src="../../js/script.min.js" defer></script>
     <title>Gulp</title>
 </head>
 
@@ -172,13 +170,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"
         integrity="sha512-3fMsI1vtU2e/tVxZORSEeuMhXnT9By80xlmXlsOku7hNwZSHJjwcOBpmy+uu+fyWwGCLkMvdVbHkeoXdAzBv+w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="../../js/script.js"></script>
+
+    <script src="../../js/script.min.js"></script>
     <script>
-        if ($('.academy__form_wrap').hasClass('coach_tab')) {
-            $('#remainSteps').html('8')
-        } else {
-            $('#remainSteps').html('10')
-        }
         /* Academy Tabs */
 
         $('[name=academyType]').on('change', function () {
@@ -190,9 +184,9 @@
             $('.academy__form_wrap').eq(i).addClass('on');
 
             if ($('.academy__form_wrap').eq(i).hasClass('coach_tab')) {
-                $('#remainSteps').html('8')
-            } else {
                 $('#remainSteps').html('10')
+            } else {
+                $('#remainSteps').html('8')
             }
         });
 
