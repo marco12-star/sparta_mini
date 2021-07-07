@@ -488,12 +488,8 @@ table {
 
 .product {
   max-width: 245px;
-  margin-left: 36px;
+  margin-right: 36px;
   margin-bottom: 36px;
-}
-
-.product:first-child {
-  margin-left: 0;
 }
 
 .product img {
