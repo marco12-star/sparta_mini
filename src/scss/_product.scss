@@ -1,7 +1,9 @@
 .catalog {
     padding: 35px 0;
 
-    &__wrap {}
+    &__wrap {
+        margin-top: 34px;
+    }
 
     aside {
         max-width: 240px;
