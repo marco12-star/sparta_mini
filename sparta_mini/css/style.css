@@ -383,6 +383,10 @@ table {
   padding: 35px 0;
 }
 
+.catalog__wrap {
+  margin-top: 34px;
+}
+
 .catalog aside {
   max-width: 240px;
   border: 1px solid #f4f4f4;
@@ -487,7 +491,7 @@ table {
 }
 
 .product {
-  max-width: 245px;
+  max-width: 225px;
   margin-right: 36px;
   margin-bottom: 36px;
 }
@@ -495,6 +499,8 @@ table {
 .product img {
   max-width: 245px;
   max-height: 360px;
+  width: 100%;
+  height: 100%;
 }
 
 .product h3 {
