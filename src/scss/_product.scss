@@ -1,0 +1,179 @@
+.catalog {
+    padding: 35px 0;
+
+    &__wrap {}
+
+    aside {
+        max-width: 240px;
+        border: 1px solid #f4f4f4;
+        padding: 24px;
+    }
+
+    &__filter {
+        p {
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 8px;
+        }
+
+        &_box {
+            background: rgba(41, 37, 37, 0.05);
+            padding: 0 8px;
+            font-size: 12px;
+            line-height: 24px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            cursor: pointer;
+
+            &:hover {
+                background: var(--pink);
+                color: var(--red);
+            }
+
+            &.chosen {
+                background: var(--red);
+                color: #fff;
+            }
+        }
+    }
+
+    input {
+        width: 100%;
+        background: none;
+        color: #000;
+        font-size: 16px;
+        font-weight: initial;
+        box-shadow: none;
+        border: none;
+        margin: 20px 0 20px 0;
+    }
+
+    .slider-range * {
+        transition: unset;
+    }
+
+    .block-input {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 8px;
+
+        input {
+            width: 83px;
+            height: 32px;
+            background: rgba(41, 37, 37, 0.05);
+            padding: 5px;
+            text-align: center;
+        }
+    }
+
+    .slider-range-line {
+        height: 2px;
+    }
+
+
+    .ui-slider-range {
+        background: var(--red);
+        height: 2px;
+        width: 100%;
+        top: -1px;
+    }
+
+    .ui-slider-horizontal .ui-slider-handle {
+        border: none;
+        border-radius: 25px;
+        background: #fff;
+        border: 2px solid var(--red);
+        height: 17px;
+        width: 17px;
+        top: -0.52em;
+        cursor: pointer;
+    }
+
+    .buttons {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 24px;
+
+        button,
+        a {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__content {
+        margin-left: 64px;
+        margin-top: 32px;
+    }
+}
+
+.product {
+    max-width: 245px;
+    margin-left: 36px;
+    margin-bottom: 36px;
+    &:first-child {
+        margin-left: 0;
+    }
+
+    img {
+        max-width: 245px;
+        max-height: 360px;
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    &__price {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 8px;
+        margin-bottom: 12px;
+
+        ins {
+            text-decoration: none;
+        }
+
+        del {
+            opacity: 0.3;
+            margin-left: 12px;
+        }
+
+        &_discount {
+            font-size: 12px;
+            line-height: 24px;
+            background: var(--pink);
+            padding: 0 8px;
+            margin-left: 12px;
+            color: var(--red);
+        }
+    }
+
+    &__colors {
+        span {
+            margin-right: 12px;
+        }
+        div {
+            width: 20px;
+            height: 20px;
+        }
+
+        .red {
+            background: #D33445;
+        }
+
+        .black {
+            background: #000;
+            margin-left: 4px;
+        }
+    }
+
+    &:hover {
+        h3 {
+            color: var(--red);
+        }
+    }
+}

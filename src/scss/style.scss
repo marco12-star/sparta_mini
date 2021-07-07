@@ -2,6 +2,7 @@
 @import './flex';
 @import './fonts';
 @import './reset';
+@import './product';
 
 @import './modules/header';
 @import './modules/footer';
@@ -81,6 +82,26 @@ h4,
 h5,
 h6 {
 	font-weight: 400;
+}
+
+
+.btn {
+    width: 49%;
+    padding: 12px 0;
+    text-align: center;
+    background: var(--red);
+    color: #fff;
+
+    &:hover {
+        filter: brightness(1.1);
+    }
+}
+
+.red_link {
+	color: var(--red);
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .sticky {

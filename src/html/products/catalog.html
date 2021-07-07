@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../../css/normalize.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="../../css/style.min.css" />
+    <title>Gulp</title>
+</head>
+
+<body>
+    <main class="content__wrapper">
+        @@include('../../templates/_header-profile.html')
+        <div class="content__slide">
+
+            <!-- Dashboard -->
+
+            <section class="catalog">
+                <div class="container">
+                    <div class="breadcrumbs flex">
+                        <a href="index.html">Главная</a>/
+                        <a href="./../dashboard/dashboard.html">Личный кабинет</a>/Форма
+                    </div>
+                    <h1>Форма</h1>
+                    <div class="catalog__wrap flex ">
+                        <aside class="catalog__filter">
+                            <p>Размер:</p>
+                            <div class="catalog__filter_item flex flwrap">
+                                <div class="catalog__filter_box">XS</div>
+                                <div class="catalog__filter_box">S</div>
+                                <div class="catalog__filter_box">M</div>
+                                <div class="catalog__filter_box">L</div>
+                                <div class="catalog__filter_box">XL</div>
+                                <div class="catalog__filter_box">XXL</div>
+                                <div class="catalog__filter_box">2XXL</div>
+                            </div>
+                            <p>Цвет:</p>
+                            <div class="catalog__filter_item flex flwrap">
+                                <div class="catalog__filter_box">399</div>
+                                <div class="catalog__filter_box">804</div>
+                                <div class="catalog__filter_box">891</div>
+                                <div class="catalog__filter_box">Белый</div>
+                                <div class="catalog__filter_box">Желтый</div>
+                                <div class="catalog__filter_box">Зеленый</div>
+                                <div class="catalog__filter_box">Красный</div>
+                            </div>
+                            <p>Флаги:</p>
+                            <div class="catalog__filter_item flex flwrap">
+                                <div class="catalog__filter_box">Акция</div>
+                                <div class="catalog__filter_box">Сидка</div>
+                                <div class="catalog__filter_box">Новинка</div>
+                                <div class="catalog__filter_box">Лидер продаж</div>
+                            </div>
+                            <p>Скидка:</p>
+                            <div class="catalog__filter_item flex flwrap">
+                                <div class="catalog__filter_box">Без скидки</div>
+                                <div class="catalog__filter_box">до 30%</div>
+                                <div class="catalog__filter_box">до 50%</div>
+                                <div class="catalog__filter_box">до 75%</div>
+                            </div>
+                            <p>Цена:</p>
+                            <div class="slider-range">
+                                <div class="block-input flex alicentr justcontbetween">
+                                    <input type="text" id="amount" readonly>
+                                    <span>—</span>
+                                    <input type="text" id="amount_1" readonly>
+                                </div>
+                                <div id="slider-range" class="slider-range-line"></div>
+                            </div>
+                            <div class="catalog__filter_item buttons flex justcontbetween">
+                                <button type="sumbit" class="btn">Показать</button>
+                                <button class="red_link">Сбросить</button>
+                            </div>
+                        </aside>
+                        <div class="catalog__content">
+                            <a href="#" class="catalog__content_product product">
+                                <img src="./../../img/products/prod_1.png" alt="ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21">
+                                <h3>ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21</h3>
+                                <div class="product__price flex alicentr justcontbetween">
+                                    <ins>5 103 ₽</ins>
+                                    <del>7 290 ₽</del>
+                                    <div class="product__price_discount flex alicentr justcontcenter">
+                                        -30%
+                                    </div>
+                                </div>
+                                <div class="product__colors flex alicentr">
+                                    <span>Другой цвет:</span>
+                                    <div class="red"></div>
+                                    <div class="black"></div>
+                                </div>
+                            </a>
+                            <a href="#" class="catalog__content_product product">
+                                <img src="./../../img/products/prod_1.png" alt="ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21">
+                                <h3>ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21</h3>
+                                <div class="product__price flex alicentr justcontbetween">
+                                    <ins>5 103 ₽</ins>
+                                    <del>7 290 ₽</del>
+                                    <div class="product__price_discount flex alicentr justcontcenter">
+                                        -30%
+                                    </div>
+                                </div>
+                                <div class="product__colors flex alicentr">
+                                    <span>Другой цвет:</span>
+                                    <div class="red"></div>
+                                    <div class="black"></div>
+                                </div>
+                            </a>
+                            <a href="#" class="catalog__content_product product">
+                                <img src="./../../img/products/prod_1.png" alt="ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21">
+                                <h3>ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21</h3>
+                                <div class="product__price flex alicentr justcontbetween">
+                                    <ins>5 103 ₽</ins>
+                                    <del>7 290 ₽</del>
+                                    <div class="product__price_discount flex alicentr justcontcenter">
+                                        -30%
+                                    </div>
+                                </div>
+                                <div class="product__colors flex alicentr">
+                                    <span>Другой цвет:</span>
+                                    <div class="red"></div>
+                                    <div class="black"></div>
+                                </div>
+                            </a>
+                            <a href="#" class="catalog__content_product product">
+                                <img src="./../../img/products/prod_1.png" alt="ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21">
+                                <h3>ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21</h3>
+                                <div class="product__price flex alicentr justcontbetween">
+                                    <ins>5 103 ₽</ins>
+                                    <del>7 290 ₽</del>
+                                    <div class="product__price_discount flex alicentr justcontcenter">
+                                        -30%
+                                    </div>
+                                </div>
+                                <div class="product__colors flex alicentr">
+                                    <span>Другой цвет:</span>
+                                    <div class="red"></div>
+                                    <div class="black"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Dashboard -->
+
+            @@include('../../templates/_footer-profile.html')
+        </div>
+    </main>
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Jquery Migrate -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"
+        integrity="sha512-3fMsI1vtU2e/tVxZORSEeuMhXnT9By80xlmXlsOku7hNwZSHJjwcOBpmy+uu+fyWwGCLkMvdVbHkeoXdAzBv+w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script src="../../js/script.min.js"></script>
+
+    <script>
+        //-----JS for Price Range slider-----
+
+        /* slider range */
+
+        $(function () {
+            $("#slider-range").slider({
+                range: true,
+                min: 0,
+                max: 8990,
+                step: 100,
+                values: [1000, 6000],
+                slide: function (event, ui) {
+                    $("#amount").val(ui.values[0]);
+                    $("#amount_1").val(ui.values[1]);
+                }
+            });
+            $("#amount").val($("#slider-range").slider("values", 0));
+            $("#amount_1").val($("#slider-range").slider("values", 1));
+
+            // Изменение местоположения ползунка при вводиде данных в первый элемент input
+            $("input#amount").change(function () {
+                var value1 = $("input#amount").val();
+                var value2 = $("input#amount_1").val();
+                if (parseInt(value1) > parseInt(value2)) {
+                    value1 = value2;
+                    $("input#amount").val(value1);
+                }
+                $("#slider-range").slider("values", 0, value1);
+                console.log(value2)
+
+            });
+
+            // Изменение местоположения ползунка при вводиде данных в второй элемент input    
+            $("input#amount_1").change(function () {
+                var value1 = $("input#amount").val();
+                var value2 = $("input#amount_1").val();
+
+                if (parseInt(value1) > parseInt(value2)) {
+                    value2 = value1;
+                    $("input#amount_1").val(value2);
+                }
+                $("#slider-range").slider("values", 1, value2);
+            });
+        });
+
+        $('.catalog__filter_box').click(function () {
+            $(this).toggleClass('chosen');
+        })
+
+        console.log($("#amount"));
+    </script>
+</body>
+
+</html>
