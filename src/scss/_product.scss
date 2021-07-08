@@ -264,6 +264,8 @@ input[type=number] {
     &__colors {
         span {
             margin-right: 12px;
+            font-size: 12px;
+            line-height: 14px;
         }
 
         div {
@@ -347,6 +349,13 @@ input[type=number] {
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
         background: #f53c45;
+    }
+
+    .product__colors {
+        span {
+            font-size: 20px;
+            line-height: 24px;
+        }
     }
 }
 
@@ -461,6 +470,7 @@ input[type=number] {
         line-height: 24px;
         padding: 9px 15px;
         padding-bottom: 7px;
+        margin-bottom: 0;
     }
 
     .chosen {
@@ -488,6 +498,7 @@ input[type=number] {
         display: block;
         width: 100%;
         max-width: 378px;
+        height: 60px;
         margin: 0 auto;
         font-size: 20px;
         line-height: 24px;
