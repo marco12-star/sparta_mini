@@ -1003,7 +1003,6 @@
 	.slider__wrap {
 		flex-wrap: wrap;
 		justify-content: center;
-		flex-direction: column-reverse;
 	}
 
 	.product__single {
@@ -1019,6 +1018,7 @@
 
 		.modal__slider {
 			margin-top: 25px;
+			margin-bottom: 25px;
 		}
 	}
 
@@ -1034,10 +1034,6 @@
 		font-size: 13px;
 		padding: 4px 11px;
 		margin-bottom: 0;
-	}
-
-	.product__single_content {
-		margin-top: 25px;
 	}
 
 	/* Single Product */
@@ -1077,7 +1073,6 @@
 	.product__single .product__price {
 		font-size: 20px;
 	}
-
 	.product__single .product__size {
 		flex-wrap: wrap;
 	}

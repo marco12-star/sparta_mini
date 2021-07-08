@@ -3477,10 +3477,6 @@ h1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
   }
 
   .product__single .modal-nav {
@@ -3500,6 +3496,7 @@ h1 {
 
   .product__single .modal__slider {
     margin-top: 25px;
+    margin-bottom: 25px;
   }
 
   .product__single_info {
@@ -3514,10 +3511,6 @@ h1 {
     font-size: 13px;
     padding: 4px 11px;
     margin-bottom: 0;
-  }
-
-  .product__single_content {
-    margin-top: 25px;
   }
 
   /* Single Product */
