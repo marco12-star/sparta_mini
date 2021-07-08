@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="../../css/normalize.min.css" />
+
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
     <link rel="stylesheet" href="../../css/style.min.css" />
     <title>Gulp</title>
@@ -25,41 +26,41 @@
                         <a href="./../dashboard/dashboard.html">Личный кабинет</a>/Форма
                     </div>
                     <h1>Форма</h1>
-                    <div class="catalog__wrap flex ">
+                    <div class="catalog__wrap flex alistart">
                         <aside class="catalog__filter">
                             <p>Размер:</p>
                             <div class="catalog__filter_item flex flwrap">
-                                <div class="catalog__filter_box">XS</div>
-                                <div class="catalog__filter_box">S</div>
-                                <div class="catalog__filter_box">M</div>
-                                <div class="catalog__filter_box">L</div>
-                                <div class="catalog__filter_box">XL</div>
-                                <div class="catalog__filter_box">XXL</div>
-                                <div class="catalog__filter_box">2XXL</div>
+                                <div class="grey_box">XS</div>
+                                <div class="grey_box">S</div>
+                                <div class="grey_box">M</div>
+                                <div class="grey_box">L</div>
+                                <div class="grey_box">XL</div>
+                                <div class="grey_box">XXL</div>
+                                <div class="grey_box">2XXL</div>
                             </div>
                             <p>Цвет:</p>
                             <div class="catalog__filter_item flex flwrap">
-                                <div class="catalog__filter_box">399</div>
-                                <div class="catalog__filter_box">804</div>
-                                <div class="catalog__filter_box">891</div>
-                                <div class="catalog__filter_box">Белый</div>
-                                <div class="catalog__filter_box">Желтый</div>
-                                <div class="catalog__filter_box">Зеленый</div>
-                                <div class="catalog__filter_box">Красный</div>
+                                <div class="grey_box">399</div>
+                                <div class="grey_box">804</div>
+                                <div class="grey_box">891</div>
+                                <div class="grey_box">Белый</div>
+                                <div class="grey_box">Желтый</div>
+                                <div class="grey_box">Зеленый</div>
+                                <div class="grey_box">Красный</div>
                             </div>
                             <p>Флаги:</p>
                             <div class="catalog__filter_item flex flwrap">
-                                <div class="catalog__filter_box">Акция</div>
-                                <div class="catalog__filter_box">Сидка</div>
-                                <div class="catalog__filter_box">Новинка</div>
-                                <div class="catalog__filter_box">Лидер продаж</div>
+                                <div class="grey_box">Акция</div>
+                                <div class="grey_box">Сидка</div>
+                                <div class="grey_box">Новинка</div>
+                                <div class="grey_box">Лидер продаж</div>
                             </div>
                             <p>Скидка:</p>
                             <div class="catalog__filter_item flex flwrap">
-                                <div class="catalog__filter_box">Без скидки</div>
-                                <div class="catalog__filter_box">до 30%</div>
-                                <div class="catalog__filter_box">до 50%</div>
-                                <div class="catalog__filter_box">до 75%</div>
+                                <div class="grey_box">Без скидки</div>
+                                <div class="grey_box">до 30%</div>
+                                <div class="grey_box">до 50%</div>
+                                <div class="grey_box">до 75%</div>
                             </div>
                             <p>Цена:</p>
                             <div class="slider-range">
@@ -76,70 +77,148 @@
                             </div>
                         </aside>
                         <div class="catalog__content">
-                            <a href="#" class="catalog__content_product product">
-                                <img src="./../../img/products/prod_1.png" alt="ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21">
-                                <h3>ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21</h3>
-                                <div class="product__price flex alicentr justcontbetween">
-                                    <ins>5 103 ₽</ins>
-                                    <del>7 290 ₽</del>
-                                    <div class="product__price_discount flex alicentr justcontcenter">
-                                        -30%
+                            <div class="catalog__products flex flwrap">
+                                <div class="catalog__content_product product">
+                                    <div class="product__img">
+                                        <img src="./././../../img/products//prod_1.png"
+                                            alt="ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21">
+                                        <div class="product__overlay flex alicentr justcontcenter">
+                                            Быстрый <br>
+                                            просмотр
+                                        </div>
+                                    </div>
+                                    <div class="catalog__product_info">
+                                        <h3><a href="product.html">ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21</a></h3>
+                                        <div class="product__price flex alicentr justcontbetween">
+                                            <ins>5 103 ₽</ins>
+                                            <del>7 290 ₽</del>
+                                            <div class="discount_box flex alicentr justcontcenter">
+                                                -30%
+                                            </div>
+                                        </div>
+                                        <div class="product__colors flex alicentr">
+                                            <span>Другой цвет:</span>
+                                            <div class="red"></div>
+                                            <div class="black"></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="product__colors flex alicentr">
-                                    <span>Другой цвет:</span>
-                                    <div class="red"></div>
-                                    <div class="black"></div>
-                                </div>
-                            </a>
-                            <a href="#" class="catalog__content_product product">
-                                <img src="./../../img/products/prod_1.png" alt="ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21">
-                                <h3>ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21</h3>
-                                <div class="product__price flex alicentr justcontbetween">
-                                    <ins>5 103 ₽</ins>
-                                    <del>7 290 ₽</del>
-                                    <div class="product__price_discount flex alicentr justcontcenter">
-                                        -30%
+                                <div class="catalog__content_product product">
+                                    <div class="product__img">
+                                        <img src="./././../../img/products//prod_2.png"
+                                            alt="ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21">
+                                        <div class="product__overlay flex alicentr justcontcenter">
+                                            Быстрый <br>
+                                            просмотр
+                                        </div>
+                                    </div>
+                                    <div class="catalog__product_info">
+                                        <h3><a href="product.html">ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21</a></h3>
+                                        <div class="product__price flex alicentr justcontbetween">
+                                            <ins>5 103 ₽</ins>
+                                            <del>7 290 ₽</del>
+                                            <div class="discount_box flex alicentr justcontcenter">
+                                                -30%
+                                            </div>
+                                        </div>
+                                        <div class="product__colors flex alicentr">
+                                            <span>Другой цвет:</span>
+                                            <div class="red"></div>
+                                            <div class="black"></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="product__colors flex alicentr">
-                                    <span>Другой цвет:</span>
-                                    <div class="red"></div>
-                                    <div class="black"></div>
-                                </div>
-                            </a>
-                            <a href="#" class="catalog__content_product product">
-                                <img src="./../../img/products/prod_1.png" alt="ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21">
-                                <h3>ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21</h3>
-                                <div class="product__price flex alicentr justcontbetween">
-                                    <ins>5 103 ₽</ins>
-                                    <del>7 290 ₽</del>
-                                    <div class="product__price_discount flex alicentr justcontcenter">
-                                        -30%
+                                <div class="catalog__content_product product">
+                                    <div class="product__img">
+                                        <img src="./././../../img/products//prod_3.png"
+                                            alt="ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21">
+                                        <div class="product__overlay flex alicentr justcontcenter">
+                                            Быстрый <br>
+                                            просмотр
+                                        </div>
+                                    </div>
+                                    <div class="catalog__product_info">
+                                        <h3><a href="product.html">ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21</a></h3>
+                                        <div class="product__price flex alicentr justcontbetween">
+                                            <ins>5 103 ₽</ins>
+                                            <del>7 290 ₽</del>
+                                            <div class="discount_box flex alicentr justcontcenter">
+                                                -30%
+                                            </div>
+                                        </div>
+                                        <div class="product__colors flex alicentr">
+                                            <span>Другой цвет:</span>
+                                            <div class="red"></div>
+                                            <div class="black"></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="product__colors flex alicentr">
-                                    <span>Другой цвет:</span>
-                                    <div class="red"></div>
-                                    <div class="black"></div>
-                                </div>
-                            </a>
-                            <a href="#" class="catalog__content_product product">
-                                <img src="./../../img/products/prod_1.png" alt="ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21">
-                                <h3>ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21</h3>
-                                <div class="product__price flex alicentr justcontbetween">
-                                    <ins>5 103 ₽</ins>
-                                    <del>7 290 ₽</del>
-                                    <div class="product__price_discount flex alicentr justcontcenter">
-                                        -30%
+                                <div class="catalog__content_product product">
+                                    <div class="product__img">
+                                        <img src="./././../../img/products//prod_4.png"
+                                            alt="ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21">
+                                        <div class="product__overlay flex alicentr justcontcenter">
+                                            Быстрый <br>
+                                            просмотр
+                                        </div>
+                                    </div>
+                                    <div class="catalog__product_info">
+                                        <h3><a href="product.html">ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21</a></h3>
+                                        <div class="product__price flex alicentr justcontbetween">
+                                            <ins>5 103 ₽</ins>
+                                            <del>7 290 ₽</del>
+                                            <div class="discount_box flex alicentr justcontcenter">
+                                                -30%
+                                            </div>
+                                        </div>
+                                        <div class="product__colors flex alicentr">
+                                            <span>Другой цвет:</span>
+                                            <div class="red"></div>
+                                            <div class="black"></div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="product__colors flex alicentr">
-                                    <span>Другой цвет:</span>
-                                    <div class="red"></div>
-                                    <div class="black"></div>
+                                <div class="catalog__content_product product">
+                                    <div class="product__img">
+                                        <img src="./././../../img/products//prod_5.png"
+                                            alt="ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21">
+                                        <div class="product__overlay flex alicentr justcontcenter">
+                                            Быстрый <br>
+                                            просмотр
+                                        </div>
+                                    </div>
+                                    <div class="catalog__product_info">
+                                        <h3><a href="product.html">ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21</a></h3>
+                                        <div class="product__price flex alicentr justcontbetween">
+                                            <ins>5 103 ₽</ins>
+                                            <del>7 290 ₽</del>
+                                            <div class="discount_box flex alicentr justcontcenter">
+                                                -30%
+                                            </div>
+                                        </div>
+                                        <div class="product__colors flex alicentr">
+                                            <span>Другой цвет:</span>
+                                            <div class="red"></div>
+                                            <div class="black"></div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </a>
+                            </div>
+                            <div class="catalog__pagination">
+                                <button class="more__items flmegacenter">Показать еще</button>
+                                <div class="catalog__pagination_body flex alicentr justcontbetween">
+                                    <div class="catalog__pagination_items flex">
+                                        <p>Товаров на странице:</p>
+                                        <p>48</p>
+                                    </div>
+                                    <div class="catalog__pagination_items flex">
+                                        <p>Показывать по:</p>
+                                        <span class="active">12</span>
+                                        <span>24</span>
+                                        <span>48</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -150,6 +229,123 @@
             @@include('../../templates/_footer-profile.html')
         </div>
     </main>
+
+    <!-- Product Modal -->
+
+    <div class="product__modal_overlay"></div>
+    <div class="product__modal flmegacenter">
+        <div class="product__single flex">
+            <div class="modal-nav">
+                <img src="././../../img/products/prod_1.png" alt="форма">
+                <img src="././../../img/products/prod_2.png" alt="форма">
+                <img src="././../../img/products/prod_3.png" alt="форма">
+                <img src="././../../img/products/prod_4.png" alt="форма">
+                <img src="././../../img/products/prod_5.png" alt="форма">
+                <img src="././../../img/products/prod_5.png" alt="форма">
+                <img src="././../../img/products/prod_5.png" alt="форма">
+                <img src="././../../img/products/prod_5.png" alt="форма">
+            </div>
+            <div class="modal__slider">
+                <img src="././../../img/products/prod_1.png" alt="форма">
+                <img src="././../../img/products/prod_2.png" alt="форма">
+                <img src="././../../img/products/prod_3.png" alt="форма">
+                <img src="././../../img/products/prod_4.png" alt="форма">
+                <img src="././../../img/products/prod_5.png" alt="форма">
+                <img src="././../../img/products/prod_5.png" alt="форма">
+                <img src="././../../img/products/prod_5.png" alt="форма">
+                <img src="././../../img/products/prod_5.png" alt="форма">
+            </div>
+            <div class="product__single_content">
+                <h2>Игровая майка домашняя сезон 2020/21</h2>
+                <div class="product__single_info">
+                    <div class="product__price flex alicentr justcontbetween">
+                        <ins>5 103 ₽</ins>
+                        <del>7 290 ₽</del>
+                        <div class="product__price_discount discount_box flex alicentr justcontcenter">
+                            -30%
+                        </div>
+                    </div>
+                    <div class="product__color">
+                        Цвет: <span>Красный</span>
+                    </div>
+                    <div class="product__colors flex alicentr">
+                        <span>Другой цвет:</span>
+                        <div class="red"></div>
+                        <div class="black"></div>
+                    </div>
+                    <div class="product__size flex alicentr`">
+                        <span>Размер:</span>
+                        <div class="grey_box">S</div>
+                        <div class="grey_box chosen">M</div>
+                        <div class="grey_box">L</div>
+                        <div class="grey_box">XL</div>
+                        <div class="grey_box">2X</div>
+                    </div>
+                    <div class="product__sizetable">
+                        <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1.27307 6.9502C1.59916 6.9502 1.86346 7.2145 1.86346 7.54059V10.847L10.6669 2.04357H7.36048C7.03439 2.04357 6.77009 1.77927 6.77009 1.45318C6.77009 1.12709 7.03439 0.862793 7.36048 0.862793H12.0922C12.4183 0.862793 12.6826 1.12709 12.6826 1.45318V6.18493C12.6826 6.51102 12.4183 6.77532 12.0922 6.77532C11.7661 6.77532 11.5018 6.51102 11.5018 6.18493V2.87857L2.69839 11.682H6.00482C6.33091 11.682 6.59521 11.9463 6.59521 12.2724C6.59521 12.5985 6.33091 12.8628 6.00482 12.8628H1.27307C0.94698 12.8628 0.682684 12.5985 0.682684 12.2724V7.54066C0.682684 7.21456 0.94698 6.9502 1.27307 6.9502Z"
+                                fill="#E30611" />
+                        </svg>Таблица размеров
+                    </div>
+
+                    <div class="product__quantity">
+                        <form class="flex alicentr">
+                            <span>Количество:</span>
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+
+                            </div>
+                            <input type="number" id="number" value="1" min="1" readonly />
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-
+                            </div>
+                        </form>
+                    </div>
+
+                    <button class="btn">Добавить в корзину</button>
+                </div>
+                <div class="product__description flex alicentr justcontbetween">
+                    <div class="product__description_header flex alicentr justcontbetween">
+                        <h3>Описание товара</h3>
+                        <svg width="16" height="11" viewBox="0 0 16 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.24219 1.80349L8.12314 8.68433L15.004 1.80349" stroke="#292525"
+                                stroke-width="2.67036" />
+                        </svg>
+                    </div>
+                    <p>
+                        Новый дизайн домашней футбольной формы «Спартака» сезона 2020/21!
+                        <br><br>
+                        Футболка выполнена с применением технологии Nike Dri-FIT, которая позволяет влаге быстрее
+                        испаряться. Форма дольше остается сухой и свежей, что помогает футболистам чувствовать себя
+                        комфортно даже при высокоинтенсивных нагрузках. Передняя и задняя части игровой джерси
+                        изготовлены из сетчатой ткани. Сетчатый материал и перфорированные отверстия обеспечивают лучшую
+                        циркуляцию воздуха и регулируют температуру тела игроков.
+                        <br><br>
+                        Форма произведена из переработанного полиэстера, что обеспечивает меньшее негативное воздействие
+                        на окружающую среду. Для создания одного комплекта футбольной формы в среднем используется 16
+                        переработанных пластиковых бутылок. Джерси и шорты изготовлены из переработанной полиэфирной
+                        ткани. Материал создан из пластиковых бутылок, расплавленных специально для получения тонкой
+                        нити.
+                        <br><br>
+                        Детали: черные вставки по бокам, черные вставки на рукаве и вороте, логотип спонсора,
+                        классическая белая полоса по середине джерси с логотипом команды. Приталенный силуэт, перфорация
+                        на спине.
+                        <br><br>
+                        Состав:100% переработанный полиэстер.
+                    </p>
+                </div>
+            </div>
+            <button class="close">
+
+                <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M24.6826 1.77685L23.2686 0.362793L12.6826 10.9487L2.09667 0.362793L0.682617 1.77685L11.2686 12.3628L0.682617 22.9487L2.09667 24.3628L12.6826 13.7768L23.2686 24.3628L24.6826 22.9487L14.0967 12.3628L24.6826 1.77685Z" />
+                </svg>
+
+            </button>
+        </div>
+    </div>
+
+    <!-- Product Modal -->
+
     <!-- Jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -159,6 +355,10 @@
         integrity="sha512-3fMsI1vtU2e/tVxZORSEeuMhXnT9By80xlmXlsOku7hNwZSHJjwcOBpmy+uu+fyWwGCLkMvdVbHkeoXdAzBv+w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <!-- Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../../js/script.min.js"></script>
 
     <script>
@@ -207,11 +407,78 @@
             });
         });
 
-        $('.catalog__filter_box').click(function () {
+        $('.grey_box').click(function () {
             $(this).toggleClass('chosen');
         })
 
-        console.log($("#amount"));
+        /* Modal */
+
+        $('.product__img').click(function () {
+            $('.product__modal').addClass('reveal')
+            $('.product__modal_overlay').addClass('reveal')
+            $('body').css('overflow', 'hidden')
+        })
+
+        $(document).mouseup(function (e) {
+            var container = $(".product__single");
+
+            if (!container.is(e.target) && container.has(e.target).length === 0) {
+                $('.product__modal').removeClass('reveal')
+                $('.product__modal_overlay').removeClass('reveal')
+                $('body').css('overflow', 'auto')
+            }
+        });
+
+        /* Product Desctiption */
+        $('.product__description_header').click(function () {
+            $('.product__description').toggleClass('show')
+        })
+        /* Product Desctiption */
+        $('.close').click(function () {
+            $('.product__modal').removeClass('reveal')
+            $('.product__modal_overlay').removeClass('reveal')
+            $('body').css('overflow', 'auto')
+        })
+
+        /* Modal */
+
+        /* Modal Slider */
+
+        $('.modal__slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.modal-nav'
+        });
+        $('.modal-nav').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            asNavFor: '.modal__slider',
+            dots: false,
+            centerMode: false,
+            focusOnSelect: true,
+            vertical: true,
+        });
+
+        /* Custom Input Number */
+        function increaseValue() {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number').value = value;
+        }
+
+        function decreaseValue() {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            if (value > 1) {
+                value--;
+            }
+            document.getElementById('number').value = value;
+        }
+        /* Custom Input Number */
     </script>
 </body>
 
