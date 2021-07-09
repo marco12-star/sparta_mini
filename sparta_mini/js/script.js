@@ -10,44 +10,28 @@ let activeMenu = false
 const removeClass = (element, className) => element.classList.remove(className)
 const addClass = (element, className) => element.classList.add(className)
 
-/* function interactionClass(el, class) {
-    
-} */
 
-bar.addEventListener('click', event => {
-    if (html.classList.contains('open_menu')) {
-        removeClass(html, 'open_menu')
-        activeMenu = false
-    } else {
-        addClass(html, 'open_menu')
-        activeMenu = true
+document.addEventListener('click', () => {
+    const target = event.target
+
+    function matches() {
+        if (target.classList.contains('bar') || target.classList.contains('bar_span')) {
+            return true
+        }
     }
+
+    const ifMatch = matches()
+
+    if (ifMatch && !html.classList.contains('open_menu')) {
+        addClass(html, 'open_menu')
+    } else if (html.classList.contains('open_menu')) {
+        removeClass(html, 'open_menu')
+    }
+
 })
 
-/* contentSlide.addEventListener('click', event => {
-    if (html.classList.contains('open_menu')) {
-        html.classList.remove('open_menu')
-    }
-}) */
-
-if (activeMenu) {
-    contentWrap.addEventListener('click', event => {
-        const target = event.target
-
-        console.log(html.matches('.open_menu'));
-
-        if (html.matches('.open_menu')) {
-            if (!target.matches('.mobile__menu')) {
-                removeClass(html, 'open_menu')
-            }
-        }
-
-    })
-}
-
-
 /* Fixed Header */
-const header = document.querySelector(".mobile__header");
+/* const header = document.querySelector(".mobile__header");
 const sticky = header.offsetTop;
 const content = document.querySelector(".catalog");
 
@@ -57,4 +41,4 @@ window.onscroll = function () {
     } else {
         header.classList.remove("sticky")
     }
-};
+}; */

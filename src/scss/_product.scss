@@ -55,11 +55,23 @@ input[type=number] {
 
     aside {
         max-width: 240px;
-        border: 1px solid #f4f4f4;
-        padding: 24px;
+    }
+    .close_filter,
+    .open__filter,
+    .filter__wrap {
+        display: none;
+    }
+
+    .overhidden {
+        overflow: hidden;
     }
 
     &__filter {
+        &_content {
+            border: 1px solid #f4f4f4;
+            padding: 24px;
+        }
+
         p:first-child {
             margin-top: 0;
         }
@@ -291,8 +303,24 @@ input[type=number] {
     top: 0;
     left: 0;
     z-index: 11;
-    transform: translateY(-100%);
+    visibility: hidden;
+    transform: scale(.8);
+    opacity: 0;
     transition: .5s ease;
+
+    & * {
+        transition: visibility 0s ease;
+    }
+
+    &.reveal {
+        transform: unset;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .close__button {
+        height: 100%;
+    }
 
     .close {
         width: 24px;
@@ -309,9 +337,7 @@ input[type=number] {
         }
     }
 
-    &.reveal {
-        transform: translateY(0);
-    }
+
 
     &_overlay {
         position: fixed;
@@ -355,6 +381,29 @@ input[type=number] {
             line-height: 24px;
         }
     }
+
+    .modal-nav {
+        .slick-slide {
+            position: relative;
+
+            &:after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: .2s ease;
+            }
+
+            &:hover {
+                &:after {
+                    background: rgb(0 0 0 / 10%);
+                }
+            }
+        }
+    }
 }
 
 body.hidden {
@@ -387,6 +436,7 @@ body.hidden {
         .slick-slide {
             width: 94px;
             height: 94px;
+            overflow: hidden;
 
             img {
                 width: 100%;
@@ -418,7 +468,7 @@ body.hidden {
 
     &_info {
         background: #F8F8F8;
-        padding: 50px;
+        padding: 40px 50px;
         margin: 24px 0;
     }
 

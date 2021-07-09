@@ -26,54 +26,84 @@
                         <a href="./../dashboard/dashboard.html">Личный кабинет</a>/Форма
                     </div>
                     <h1>Форма</h1>
+                    <div class="filter__wrap alicentr justcontbetween">
+
+                        <select name="#" id="#">
+                            <option value="Новинки">Новинки</option>
+                            <option value="Цена по возрастанию">Цена по возрастанию</option>
+                            <option value="Цена по убыванию">Цена по убыванию</option>
+                            <option value="Цена по убыванию">Цена по убыванию</option>
+                        </select>
+
+                        <button class="open__filter">
+                            <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
+                                width="512" xmlns="http://www.w3.org/2000/svg">
+                                <g>
+                                    <path d="m90.5 0h-30v362h-30v90h30v60h30v-60h30v-90h-30zm0 422h-30v-30h30z" />
+                                    <path d="m481.5 362h-30v-362h-30v362h-30v90h30v60h30v-60h30zm-30 60h-30v-30h30z" />
+                                    <path d="m331.5 0h-30v222h-30v90h30v200h30v-200h30v-90h-30zm0 282h-30v-30h30z" />
+                                    <path
+                                        d="m210.5 0h-30v53.652h-30v90h30v368.348h30v-368.348h30v-90h-30zm0 113.652h-30v-30h30z" />
+                                </g>
+                            </svg>
+                        </button>
+                    </div>
                     <div class="catalog__wrap flex alistart">
                         <aside class="catalog__filter">
-                            <p>Размер:</p>
-                            <div class="catalog__filter_item flex flwrap">
-                                <div class="grey_box">XS</div>
-                                <div class="grey_box">S</div>
-                                <div class="grey_box">M</div>
-                                <div class="grey_box">L</div>
-                                <div class="grey_box">XL</div>
-                                <div class="grey_box">XXL</div>
-                                <div class="grey_box">2XXL</div>
-                            </div>
-                            <p>Цвет:</p>
-                            <div class="catalog__filter_item flex flwrap">
-                                <div class="grey_box">399</div>
-                                <div class="grey_box">804</div>
-                                <div class="grey_box">891</div>
-                                <div class="grey_box">Белый</div>
-                                <div class="grey_box">Желтый</div>
-                                <div class="grey_box">Зеленый</div>
-                                <div class="grey_box">Красный</div>
-                            </div>
-                            <p>Флаги:</p>
-                            <div class="catalog__filter_item flex flwrap">
-                                <div class="grey_box">Акция</div>
-                                <div class="grey_box">Сидка</div>
-                                <div class="grey_box">Новинка</div>
-                                <div class="grey_box">Лидер продаж</div>
-                            </div>
-                            <p>Скидка:</p>
-                            <div class="catalog__filter_item flex flwrap">
-                                <div class="grey_box">Без скидки</div>
-                                <div class="grey_box">до 30%</div>
-                                <div class="grey_box">до 50%</div>
-                                <div class="grey_box">до 75%</div>
-                            </div>
-                            <p>Цена:</p>
-                            <div class="slider-range">
-                                <div class="block-input flex alicentr justcontbetween">
-                                    <input type="text" id="amount" readonly>
-                                    <span>—</span>
-                                    <input type="text" id="amount_1" readonly>
+                            <div class="catalog__filter_content">
+                                <div class="close_filter">
+                                    <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M24.6826 1.77685L23.2686 0.362793L12.6826 10.9487L2.09667 0.362793L0.682617 1.77685L11.2686 12.3628L0.682617 22.9487L2.09667 24.3628L12.6826 13.7768L23.2686 24.3628L24.6826 22.9487L14.0967 12.3628L24.6826 1.77685Z" />
+                                    </svg>
                                 </div>
-                                <div id="slider-range" class="slider-range-line"></div>
-                            </div>
-                            <div class="catalog__filter_item buttons flex justcontbetween">
-                                <button type="sumbit" class="btn">Показать</button>
-                                <button class="red_link">Сбросить</button>
+                                <p>Размер:</p>
+                                <div class="catalog__filter_item flex flwrap">
+                                    <div class="grey_box">XS</div>
+                                    <div class="grey_box">S</div>
+                                    <div class="grey_box">M</div>
+                                    <div class="grey_box">L</div>
+                                    <div class="grey_box">XL</div>
+                                    <div class="grey_box">XXL</div>
+                                    <div class="grey_box">2XXL</div>
+                                </div>
+                                <p>Цвет:</p>
+                                <div class="catalog__filter_item flex flwrap">
+                                    <div class="grey_box">399</div>
+                                    <div class="grey_box">804</div>
+                                    <div class="grey_box">891</div>
+                                    <div class="grey_box">Белый</div>
+                                    <div class="grey_box">Желтый</div>
+                                    <div class="grey_box">Зеленый</div>
+                                    <div class="grey_box">Красный</div>
+                                </div>
+                                <p>Флаги:</p>
+                                <div class="catalog__filter_item flex flwrap">
+                                    <div class="grey_box">Акция</div>
+                                    <div class="grey_box">Сидка</div>
+                                    <div class="grey_box">Новинка</div>
+                                    <div class="grey_box">Лидер продаж</div>
+                                </div>
+                                <p>Скидка:</p>
+                                <div class="catalog__filter_item flex flwrap">
+                                    <div class="grey_box">Без скидки</div>
+                                    <div class="grey_box">до 30%</div>
+                                    <div class="grey_box">до 50%</div>
+                                    <div class="grey_box">до 75%</div>
+                                </div>
+                                <p>Цена:</p>
+                                <div class="slider-range">
+                                    <div class="block-input flex alicentr justcontbetween">
+                                        <input type="text" id="amount">
+                                        <span>—</span>
+                                        <input type="text" id="amount_1">
+                                    </div>
+                                    <div id="slider-range" class="slider-range-line"></div>
+                                </div>
+                                <div class="catalog__filter_item buttons flex justcontbetween">
+                                    <button type="sumbit" class="btn">Показать</button>
+                                    <button class="red_link">Сбросить</button>
+                                </div>
                             </div>
                         </aside>
                         <div class="catalog__content">
@@ -213,9 +243,11 @@
                                     </div>
                                     <div class="catalog__pagination_items flex">
                                         <p>Показывать по:</p>
-                                        <span class="active">12</span>
-                                        <span>24</span>
-                                        <span>48</span>
+                                        <div>
+                                            <span class="active">12</span>
+                                            <span>24</span>
+                                            <span>48</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -234,7 +266,7 @@
 
     <div class="product__modal_overlay"></div>
     <div class="product__modal flmegacenter">
-        <div class="product__single flex">
+        <div class="product__single flmegacenter">
             <div class="modal-nav">
                 <img src="././../../img/products/prod_1.png" alt="форма">
                 <img src="././../../img/products/prod_2.png" alt="форма">
@@ -333,14 +365,16 @@
                     </p>
                 </div>
             </div>
-            <button class="close">
+            <div class="close__button">
+                <button class="close">
 
-                <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M24.6826 1.77685L23.2686 0.362793L12.6826 10.9487L2.09667 0.362793L0.682617 1.77685L11.2686 12.3628L0.682617 22.9487L2.09667 24.3628L12.6826 13.7768L23.2686 24.3628L24.6826 22.9487L14.0967 12.3628L24.6826 1.77685Z" />
-                </svg>
+                    <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M24.6826 1.77685L23.2686 0.362793L12.6826 10.9487L2.09667 0.362793L0.682617 1.77685L11.2686 12.3628L0.682617 22.9487L2.09667 24.3628L12.6826 13.7768L23.2686 24.3628L24.6826 22.9487L14.0967 12.3628L24.6826 1.77685Z" />
+                    </svg>
 
-            </button>
+                </button>
+            </div>
         </div>
     </div>
 
@@ -354,7 +388,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"
         integrity="sha512-3fMsI1vtU2e/tVxZORSEeuMhXnT9By80xlmXlsOku7hNwZSHJjwcOBpmy+uu+fyWwGCLkMvdVbHkeoXdAzBv+w=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- Slick JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
@@ -362,8 +398,6 @@
     <script src="../../js/script.min.js"></script>
 
     <script>
-        //-----JS for Price Range slider-----
-
         /* slider range */
 
         $(function () {
@@ -478,6 +512,15 @@
             document.getElementById('number').value = value;
         }
         /* Custom Input Number */
+
+        $('.open__filter').click(function () {
+            $('.catalog__filter').addClass('show')
+            $('body').addClass('hidden')
+        })
+        $('.close_filter').click(function () {
+            $('.catalog__filter').removeClass('show')
+            $('body').removeClass('overhidden')
+        })
     </script>
 </body>
 
