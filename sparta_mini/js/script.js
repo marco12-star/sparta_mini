@@ -1,25 +1,60 @@
 /* Hamburger Menu */
-var bar = document.getElementById("bar")
-var html = document.querySelector('html')
+const bar = document.getElementById("bar")
+const html = document.querySelector('html')
+const contentSlide = document.querySelector('.content__slide')
+const mobileHeader = document.querySelector('.mobile__header')
+const contentWrap = document.querySelector('.content__wrapper')
 
+let activeMenu = false
 
-bar.addEventListener('click', function() {
+const removeClass = (element, className) => element.classList.remove(className)
+const addClass = (element, className) => element.classList.add(className)
+
+/* function interactionClass(el, class) {
+    
+} */
+
+bar.addEventListener('click', event => {
     if (html.classList.contains('open_menu')) {
-        html.classList.remove('open_menu')
+        removeClass(html, 'open_menu')
+        activeMenu = false
     } else {
-        html.classList.add('open_menu')
+        addClass(html, 'open_menu')
+        activeMenu = true
     }
 })
 
+/* contentSlide.addEventListener('click', event => {
+    if (html.classList.contains('open_menu')) {
+        html.classList.remove('open_menu')
+    }
+}) */
+
+if (activeMenu) {
+    contentWrap.addEventListener('click', event => {
+        const target = event.target
+
+        console.log(html.matches('.open_menu'));
+
+        if (html.matches('.open_menu')) {
+            if (!target.matches('.mobile__menu')) {
+                removeClass(html, 'open_menu')
+            }
+        }
+
+    })
+}
+
 
 /* Fixed Header */
-var header = document.querySelector(".mobile__header");
-var sticky = header.offsetTop;
+const header = document.querySelector(".mobile__header");
+const sticky = header.offsetTop;
+const content = document.querySelector(".catalog");
 
 window.onscroll = function () {
     if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
+        header.classList.add("sticky")
     } else {
-        header.classList.remove("sticky");
+        header.classList.remove("sticky")
     }
 };

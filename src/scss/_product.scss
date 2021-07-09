@@ -140,7 +140,7 @@ input[type=number] {
     }
 
     &__products {
-        width: 100%;
+        width: 95%;
         margin-left: 37px;
 
         .discount_box {
@@ -167,7 +167,6 @@ input[type=number] {
         }
 
         &_items {
-            font-weight: 500;
             font-size: 16px;
             line-height: 24px;
             margin-top: 48px;
@@ -244,7 +243,6 @@ input[type=number] {
     }
 
     &__price {
-        font-weight: 500;
         font-size: 20px;
         line-height: 24px;
         margin-top: 8px;
@@ -333,22 +331,22 @@ input[type=number] {
 
     /* width */
     ::-webkit-scrollbar {
-        width: 10px;
+        width: 12px;
     }
 
     /* Track */
     ::-webkit-scrollbar-track {
-        background: var(--pink);
+        background: #fff;
     }
 
     /* Handle */
     ::-webkit-scrollbar-thumb {
-        background: var(--red);
+        background: #cfcfcf;
     }
 
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-        background: #f53c45;
+        background: #969696;
     }
 
     .product__colors {
@@ -357,6 +355,10 @@ input[type=number] {
             line-height: 24px;
         }
     }
+}
+
+body.hidden {
+    overflow: hidden;
 }
 
 .product__modal .product__single {
@@ -471,11 +473,6 @@ input[type=number] {
         padding: 9px 15px;
         padding-bottom: 7px;
         margin-bottom: 0;
-    }
-
-    .chosen {
-        color: #c7c5c5;
-        background: rgba(41, 37, 37, .05);
     }
 
     .product__sizetable {
