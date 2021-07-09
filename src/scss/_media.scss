@@ -1085,8 +1085,12 @@
 		}
 
 		&__pagination_body {
-			flex-direction: column;
 			text-align: center;
+			opacity: .8;
+
+			p {
+				font-size: 13px;
+			}
 		}
 	}
 
@@ -1158,7 +1162,7 @@
 	.catalog {
 		.product {
 			height: unset;
-			margin-bottom: 15px;
+			margin-bottom: 25px;
 
 			&__img {
 				max-width: 85px;

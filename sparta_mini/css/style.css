@@ -3633,11 +3633,12 @@ h1 {
   }
 
   .catalog__pagination_body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     text-align: center;
+    opacity: 0.8;
+  }
+
+  .catalog__pagination_body p {
+    font-size: 13px;
   }
 
   /* Single Product */
@@ -3704,7 +3705,7 @@ h1 {
 
   .catalog .product {
     height: unset;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 
   .catalog .product__img {
