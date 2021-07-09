@@ -780,15 +780,16 @@
 
 		.filter__select {
 			position: relative;
+
 			&:after {
 				content: "";
-    display: block;
-    width: 15px;
-    height: 10px;
-    background: url(../../img/icons/arrowdown.svg) 100%/cover no-repeat;
-    position: absolute;
-    right: 10px;
-    top: 18px;
+				display: block;
+				width: 15px;
+				height: 10px;
+				background: url(../../img/icons/arrowdown.svg) 100%/cover no-repeat;
+				position: absolute;
+				right: 10px;
+				top: 18px;
 			}
 		}
 
