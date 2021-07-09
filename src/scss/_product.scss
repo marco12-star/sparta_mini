@@ -45,6 +45,10 @@ input[type=number] {
     margin-top: 4px;
 }
 
+.overhidden {
+    overflow: hidden;
+}
+
 /* Configure */
 .catalog {
     padding: 35px 0;
@@ -56,15 +60,14 @@ input[type=number] {
     aside {
         max-width: 240px;
     }
+
     .close_filter,
     .open__filter,
     .filter__wrap {
         display: none;
     }
 
-    .overhidden {
-        overflow: hidden;
-    }
+
 
     &__filter {
         &_content {

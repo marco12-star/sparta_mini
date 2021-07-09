@@ -425,6 +425,10 @@ input[type=number] {
   margin-top: 4px;
 }
 
+.overhidden {
+  overflow: hidden;
+}
+
 /* Configure */
 
 .catalog {
@@ -443,10 +447,6 @@ input[type=number] {
 .catalog .open__filter,
 .catalog .filter__wrap {
   display: none;
-}
-
-.catalog .overhidden {
-  overflow: hidden;
 }
 
 .catalog__filter_content {

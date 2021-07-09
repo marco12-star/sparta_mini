@@ -395,10 +395,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
+        integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../../js/script.min.js"></script>
 
     <script>
         /* slider range */
+
+        $('.ui-slider-handle').draggable();
 
         $(function () {
             $("#slider-range").slider({
@@ -515,7 +520,7 @@
 
         $('.open__filter').click(function () {
             $('.catalog__filter').addClass('show')
-            $('body').addClass('hidden')
+            $('body').addClass('overhidden')
         })
         $('.close_filter').click(function () {
             $('.catalog__filter').removeClass('show')
