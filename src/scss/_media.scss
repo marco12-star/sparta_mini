@@ -772,8 +772,23 @@
 			select {
 				border: 1px solid grey;
 				background: #fff;
-				padding: 3px;
+				padding: 12px;
+				appearance: none;
 				background: #f4f4f4;
+			}
+		}
+
+		.filter__select {
+			position: relative;
+			&:after {
+				content: "";
+    display: block;
+    width: 15px;
+    height: 10px;
+    background: url(../../img/icons/arrowdown.svg) 100%/cover no-repeat;
+    position: absolute;
+    right: 10px;
+    top: 18px;
 			}
 		}
 
@@ -781,6 +796,7 @@
 			display: block;
 			width: 25px;
 			height: 25px;
+
 
 			svg {
 				width: 100%;
@@ -1098,6 +1114,8 @@
 			flex-direction: column;
 			margin-top: 15px;
 			text-align: center;
+
+			&:first-child {}
 
 			p {
 				margin: 0;

@@ -660,8 +660,8 @@ input[type=number] {
 }
 
 .product__colors div {
-  width: 20px;
-  height: 20px;
+  width: 13px;
+  height: 13px;
 }
 
 .product__colors .red {
@@ -3326,8 +3326,26 @@ h1 {
   .catalog .filter__wrap select {
     border: 1px solid grey;
     background: #fff;
-    padding: 3px;
+    padding: 12px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     background: #f4f4f4;
+  }
+
+  .catalog .filter__select {
+    position: relative;
+  }
+
+  .catalog .filter__select:after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 10px;
+    background: url(../../img/icons/arrowdown.svg) 100%/cover no-repeat;
+    position: absolute;
+    right: 10px;
+    top: 18px;
   }
 
   .catalog .open__filter {
