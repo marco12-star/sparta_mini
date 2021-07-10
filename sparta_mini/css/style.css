@@ -1166,16 +1166,6 @@ h6 {
   text-decoration: underline;
 }
 
-/* .sticky {
-	position: fixed;
-	top: 0;
-	left: 0;
-	padding: 13px 15px !important;
-	width: 100%;
-	z-index: 12;
-	background: #fff;
-} */
-
 .header__top {
   padding: 15px 0;
   border-bottom: 1px solid #C7C7C7;
@@ -2712,6 +2702,12 @@ h1 {
 }
 
 @media all and (max-width: 992px) {
+  .content__slide {
+    -webkit-transition: 0s ease;
+    -o-transition: 0s ease;
+    transition: 0s ease;
+  }
+
   .visible-lg {
     display: none;
   }
@@ -2757,11 +2753,6 @@ h1 {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 13px 0;
-    -webkit-transition: padding 0s, -webkit-transform 0.2s ease;
-    transition: padding 0s, -webkit-transform 0.2s ease;
-    -o-transition: padding 0s, transform 0.2s ease;
-    transition: padding 0s, transform 0.2s ease;
-    transition: padding 0s, transform 0.2s ease, -webkit-transform 0.2s ease;
     z-index: 999;
     position: fixed;
     top: 0;
@@ -3421,6 +3412,10 @@ h1 {
 
   .catalog__product_info {
     height: 100%;
+  }
+
+  .filter__select {
+    margin-right: 15px;
   }
 }
 

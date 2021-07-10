@@ -180,6 +180,11 @@
 }
 
 @media all and (max-width: 992px) {
+
+	.content__slide {
+		transition: 0s ease;
+	}
+
 	.visible-lg {
 		display: none;
 	}
@@ -219,7 +224,6 @@
 		align-items: center;
 		justify-content: space-between;
 		padding: 13px 0;
-		transition: padding 0s, transform .2s ease;
 		z-index: 999;
 		position: fixed;
 		top: 0;
@@ -831,6 +835,9 @@
 		}
 	}
 
+	.filter__select {
+		margin-right: 15px;
+	}
 
 }
 
@@ -1197,6 +1204,7 @@
 
 	.filter__wrap {
 		flex-wrap: wrap;
+
 		.flex.alicentr.justcontbetween {
 			width: 100%;
 			margin-top: 25px;

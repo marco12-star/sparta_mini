@@ -30,6 +30,14 @@ document.addEventListener('click', () => {
 
 })
 
+$('body').bind('swiperight', function () {
+    $('html').addClass('open_menu')
+});
+$('body').bind('swipeleft', function () {
+    $('html').removeClass('open_menu')
+});
+
+
 /* Fixed Header */
 /* const header = document.querySelector(".mobile__header");
 const sticky = header.offsetTop;
