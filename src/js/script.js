@@ -30,12 +30,7 @@ document.addEventListener('click', () => {
 
 })
 
-$('body').bind('swiperight', function () {
-    $('html').addClass('open_menu')
-});
-$('body').bind('swipeleft', function () {
-    $('html').removeClass('open_menu')
-});
+
 
 
 /* Fixed Header */

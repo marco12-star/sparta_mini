@@ -679,6 +679,7 @@ input[type=number] {
   line-height: 24px;
   margin-top: 8px;
   margin-bottom: 12px;
+  white-space: nowrap;
 }
 
 .product__price ins {
@@ -1924,6 +1925,9 @@ h6 {
   line-height: 19px;
   color: #9ea3aa;
   margin-bottom: 12px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  white-space: nowrap;
 }
 
 .breadcrumbs a {
@@ -2702,10 +2706,8 @@ h1 {
 }
 
 @media all and (max-width: 992px) {
-  .content__slide {
-    -webkit-transition: 0s ease;
-    -o-transition: 0s ease;
-    transition: 0s ease;
+  .content__wrapper {
+    overflow-x: hidden;
   }
 
   .visible-lg {

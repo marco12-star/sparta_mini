@@ -180,9 +180,8 @@
 }
 
 @media all and (max-width: 992px) {
-
-	.content__slide {
-		transition: 0s ease;
+	.content__wrapper {
+		overflow-x: hidden;
 	}
 
 	.visible-lg {
