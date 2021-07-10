@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../../css/normalize.min.css" />
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="../../css/style.min.css" />
+    <title>Gulp</title>
+</head>
+
+<body>
+    <main class="content__wrapper">
+        @@include('../../templates/_header-profile.html')
+        <div class="content__slide">
+
+            <!-- Cart -->
+
+            <section class="catalog cart loged">
+                <div class="container">
+                    <div class="breadcrumbs flex">
+                        <a href="index.html">Главная</a>/Оформление заказа
+                    </div>
+
+                    <div class="catalog__table_wrap">
+                        <table>
+                            <thead>
+                                <th colspan="2">Товары:</th>
+                                <th>Цена</th>
+                                <th>Сумма</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" rowspan="2">
+                                        <div class="cart__product flex">
+                                            <div class="product__img">
+                                                <img src="./../../img/products/prod_1.png"
+                                                    alt="Игровая майка домашняя сезон 2020/21">
+                                            </div>
+                                            <div class="cart__product__info">
+                                                <h3><a href="#">Игровая майка домашняя сезон 2020/21</a></h3>
+                                                <span class="articul">Артикул CI3588</span>
+                                                <div class="cart__product__size flex alicentr">
+                                                    <p>Размер:</p>
+                                                    <div class="flex flwrap">
+                                                        <div class="grey_box">XS</div>
+                                                        <div class="grey_box">S</div>
+                                                        <div class="grey_box">M</div>
+                                                        <div class="grey_box">L</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="price_td">
+                                        5 103 ₽
+                                    </td>
+                                    <td class="price_td">
+                                        5 103 ₽
+                                    </td>
+                                    <td>
+                                        <button class="close">
+                                            <img src="./../../img/icons/close.svg" alt="">
+                                        </button>
+                                    </td>
+                                <tr>
+                                    <td class="quantity__td" colspan="2">
+                                        <div class="product__quantity">
+                                            <form class="flex alicentr">
+                                                <span>Количество:</span>
+                                                <div class="value-button" id="increase" onclick="increaseValue()"
+                                                    value="Increase Value">+
+                                                </div>
+                                                <input type="number" id="number" value="1" min="1" readonly />
+                                                <div class="value-button" id="decrease" onclick="decreaseValue()"
+                                                    value="Decrease Value">-
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="cart__price_total flex justcontend">
+                            <p>Товаров на:</p><span>5 103 ₽</span>
+                        </div>
+                        <div class="cart__price_total flex justcontend">
+                            <p>Итого к оплате:</p><span>5 103 ₽</span>
+                        </div>
+                    </div>
+
+                    <form action="#" class="cart__userinfo">
+                        <h2>Информация о покупателе:</h2>
+                        <div class="cart__userinfo_wrap flex">
+                            <div class="cart__userinfo_form">
+                                <input type="text" placeholder="Ф.И.О.*">
+                                <input type="text" placeholder="E-MAIL*">
+                                <input type="text" placeholder="ТЕЛЕФОН*">
+                                <input type="text" placeholder="ГОРОД*">
+                                <input type="text" placeholder="АДРЕС ДОСТАВКИ*">
+                                <div class="input__wrap">
+                                    <input type="text" placeholder="Дом*">
+                                    <input type="text" placeholder="Строение">
+                                    <input type="text" placeholder="Корпус">
+                                    <input type="text" placeholder="Кв./Офис">
+                                </div>
+                            </div>
+                            <p>
+                                Обратите внимание на правильность заполнения полей формы. Неверное заполнение может
+                                привести
+                                к задержке оформления заказа.
+                                <br><br>
+                                Личные сведения, полученные в распоряжение интернет-магазина при регистрации или
+                                каким-либо
+                                иным образом, не будут без разрешения пользователей передаваться третьим организациям и
+                                лицам за исключением ситуаций, когда этого требует закон или судебное решение.
+                            </p>
+                        </div>
+                        <h2>Способ доставки:</h2>
+                        <div class="cart__userinfo_deliver flex">
+                            <div class="academy__form_legal flex">
+                                <input type="radio" id="deliver1" checked name="deliver">
+                                <label for="deliver1">
+                                    <div class="concent_box"></div>
+                                    <h4>
+                                        Курьер КСЭ
+                                    </h4>
+                                    <p>Доставка до двери курьером КСЭ</p>
+                                    <span>Стоимость: 633 ₽</span>
+                                </label>
+                            </div>
+                            <div class="academy__form_legal flex">
+                                <input type="radio" id="deliver2" name="deliver">
+                                <label for="deliver2">
+                                    <div class="concent_box"></div>
+                                    <h4>
+                                        Курьер КСЭ
+                                    </h4>
+                                    <p>Доставка до двери курьером КСЭ</p>
+                                    <span>Стоимость: 633 ₽</span>
+                                </label>
+                            </div>
+                        </div>
+                        <h2>Способ оплаты:</h2>
+                        <div class="cart__userinfo_deliver flex">
+                            <div class="academy__form_legal flex">
+                                <input type="radio" id="pay1" checked name="pay">
+                                <label for="pay1">
+                                    <div class="concent_box"></div>
+                                    <h4>
+                                        Банковская карта
+                                    </h4>
+                                    <p>Онлайн оплата банковской картой</p>
+                                </label>
+                            </div>
+                            <div class="academy__form_legal flex">
+                                <input type="radio" id="pay2" name="pay">
+                                <label for="pay2">
+                                    <div class="concent_box"></div>
+                                    <h4>
+                                        Наличные курьеру
+                                    </h4>
+                                    <p>Оплата наличными при получении заказа курьеру</p>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="submit__wrap flex justcontend">
+                            <p>
+                                Внимание! Перед оформлением заказа, убедительно просим вас внимательно ознакомиться с
+                                правилами оплаты и доставки.
+                            </p>
+                            <button type="submit" class="btn">
+                                Оформить заказ
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Cart -->
+
+            @@include('../../templates/_footer-profile.html')
+        </div>
+    </main>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Jquery Migrate -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"
+        integrity="sha512-3fMsI1vtU2e/tVxZORSEeuMhXnT9By80xlmXlsOku7hNwZSHJjwcOBpmy+uu+fyWwGCLkMvdVbHkeoXdAzBv+w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"
+        integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Slick JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"
+        integrity="sha512-0bEtK0USNd96MnO4XhH8jhv3nyRF0eK87pJke6pkYf3cM0uDIhNJy9ltuzqgypoIFXw3JSuiy04tVk4AjpZdZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-touch-events/2.0.0/jquery.mobile-events.min.js">
+    </script>
+    <script src="../../js/script.min.js"></script>
+
+    <script>
+        /* slider range */
+
+        $('.grey_box').click(function () {
+            $(this).toggleClass('chosen');
+        })
+
+
+        /* Custom Input Number */
+        function increaseValue() {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number').value = value;
+        }
+
+        function decreaseValue() {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            if (value > 1) {
+                value--;
+            }
+            document.getElementById('number').value = value;
+        }
+    </script>
+    </script>
+</body>
+
+</html>
