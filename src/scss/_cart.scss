@@ -35,6 +35,10 @@
         tbody {
             border-bottom: 1px solid #cccbcb;
 
+            tr {
+                position: relative;
+            }
+
             td {
                 vertical-align: top;
                 padding: 24px 0;
@@ -48,7 +52,6 @@
 
             .quantity__td {
                 padding: 0;
-                padding-bottom: 24px;
             }
         }
     }
@@ -161,6 +164,9 @@
         width: 16px;
         height: 16px;
         margin-top: 5px;
+        position: absolute;
+        top: 21px;
+        right: 0;
 
         img {
             width: 100%;
@@ -295,6 +301,7 @@
 
     .submit__wrap {
         margin-top: 36px;
+
         p {
             font-size: 16px;
             line-height: 20px;
