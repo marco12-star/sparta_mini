@@ -3,6 +3,7 @@
 @import './fonts';
 @import './reset';
 @import './product';
+@import './cart';
 
 @import './modules/header';
 @import './modules/footer';
@@ -27,7 +28,7 @@ span {
 /* Configure */
 
 * {
-	font-family: 'NoirPro', sans-serif;
+	font-family: 'NoirPro', 'Roboto', sans-serif;
 	color: var(--textColor);
 	transition: .2s ease;
 
@@ -37,7 +38,7 @@ span {
 }
 
 body {
-	font-family: 'NoirPro', sans-serif;
+	font-family: 'NoirPro', 'Roboto', sans-serif;
 	color: var(--textColor);
 }
 
@@ -83,6 +84,7 @@ h5,
 h6 {
 	font-weight: 400;
 }
+
 
 /* Configure */
 

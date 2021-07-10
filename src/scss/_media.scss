@@ -529,7 +529,8 @@
 		}
 	}
 
-	.product__modal {
+	.product__modal,
+	.product__overlay {
 		display: none;
 
 		&_overlay.reveal {

@@ -106,8 +106,8 @@
                                     <div id="slider-range" class="slider-range-line"></div>
                                 </div>
                                 <div class="catalog__filter_item buttons flex justcontbetween">
-                                    <button type="sumbit" class="btn">Показать</button>
-                                    <button class="red_link">Сбросить</button>
+                                    <button type="sumbit" class="btn" id="submitFilter">Показать</button>
+                                    <button class="red_link" id="reset">Сбросить</button>
                                 </div>
                             </div>
                         </aside>
@@ -411,18 +411,8 @@
         /* slider range */
 
         $('.ui-slider-handle').draggable();
-
-        $('body').bind('swiperight', function () {
-            if ($('.catalog__filter').hasClass('show')) {
-
-            } else {
-                $('html').addClass('open_menu')
-            }
-        });
-        $('body').bind('swipeleft', function () {
-            $('html').removeClass('open_menu')
-        });
-
+        
+        
         $(function () {
             $("#slider-range").slider({
                 range: true,
@@ -448,12 +438,12 @@
                 }
                 $("#slider-range").slider("values", 0, value1);
             });
-
+            
             // Изменение местоположения ползунка при вводиде данных в второй элемент input    
             $("input#amount_1").change(function () {
                 var value1 = $("input#amount").val();
                 var value2 = $("input#amount_1").val();
-
+                
                 if (parseInt(value1) > parseInt(value2)) {
                     value2 = value1;
                     $("input#amount_1").val(value2);
@@ -461,29 +451,29 @@
                 $("#slider-range").slider("values", 1, value2);
             });
         });
-
+        
         $('.grey_box').click(function () {
             $(this).toggleClass('chosen');
         })
-
+        
         /* Modal */
-
+        
         $('.product__img').click(function () {
             $('.product__modal').addClass('reveal')
             $('.product__modal_overlay').addClass('reveal')
             $('body').addClass('hidden')
         })
-
+        
         $(document).mouseup(function (e) {
             var container = $(".product__single");
-
+            
             if (!container.is(e.target) && container.has(e.target).length === 0) {
                 $('.product__modal').removeClass('reveal')
                 $('.product__modal_overlay').removeClass('reveal')
                 $('body').removeClass('hidden')
             }
         });
-
+        
         /* Product Desctiption */
         $('.product__description_header').click(function () {
             $('.product__description').toggleClass('show')
@@ -494,11 +484,11 @@
             $('.product__modal_overlay').removeClass('reveal')
             $('body').css('overflow', 'auto')
         })
-
+        
         /* Modal */
-
+        
         /* Modal Slider */
-
+        
         $('.modal__slider').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -516,7 +506,7 @@
             vertical: true,
             verticalSwiping: true,
         });
-
+        
         /* Custom Input Number */
         function increaseValue() {
             var value = parseInt(document.getElementById('number').value, 10);
@@ -536,6 +526,18 @@
         }
         /* Custom Input Number */
 
+        /* Catalog Filter */
+        $('body').bind('swiperight', function () {
+            if ($('.catalog__filter').hasClass('show')) {
+        
+            } else {
+                $('html').addClass('open_menu')
+            }
+        });
+        $('body').bind('swipeleft', function () {
+            $('html').removeClass('open_menu')
+        });
+        
         $('.open__filter').click(function () {
             $('.catalog__filter').addClass('show')
             $('body').addClass('overhidden')
@@ -544,7 +546,23 @@
             $('.catalog__filter').removeClass('show')
             $('body').removeClass('overhidden')
         })
-    </script>
+        $('#submitFilter').click(function () {
+            $('.catalog__filter').removeClass('show')
+            $('body').removeClass('overhidden')
+        })
+        $('#reset').click(function () {
+            $('.grey_box').removeClass('chosen')
+        })
+        
+        
+        $('body').bind('swipedown', function () {
+            const catalogOffsetTop = $('.catalog__filter').offset().top
+            if ($('.catalog__filter').hasClass('show') && catalogOffsetTop == 0) {
+                $('.catalog__filter').removeClass('show')
+                $('body').removeClass('overhidden')
+            }
+        });
+        </script>
 </body>
 
 </html>

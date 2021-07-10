@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
     <link rel="stylesheet" href="../../css/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <title>Gulp</title>
 </head>
 
@@ -19,244 +22,76 @@
 
             <!-- Dashboard -->
 
-            <section class="catalog">
+            <section class="catalog cart">
                 <div class="container">
                     <div class="breadcrumbs flex">
-                        <a href="index.html">Главная</a>/
-                        <a href="./../dashboard/dashboard.html">Личный кабинет</a>/Форма
-                    </div>
-                    <div class="flex justcontbetween alicentr filter__wrap">
-                        <h1>Форма</h1>
-                        <div class="flex justcontbetween alicentr">
-                            <div class="filter__select">
-                                <select name="#" id="#">
-                                    <option value="Новинки">Новинки</option>
-                                    <option value="Цена по возрастанию">Цена по возрастанию</option>
-                                    <option value="Цена по убыванию">Цена по убыванию</option>
-                                    <option value="Цена по убыванию">Цена по убыванию</option>
-                                </select>
-                            </div>
-                            <button class="open__filter">
-                                <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512"
-                                    width="512" xmlns="http://www.w3.org/2000/svg">
-                                    <g>
-                                        <path d="m90.5 0h-30v362h-30v90h30v60h30v-60h30v-90h-30zm0 422h-30v-30h30z" />
-                                        <path
-                                            d="m481.5 362h-30v-362h-30v362h-30v90h30v60h30v-60h30zm-30 60h-30v-30h30z" />
-                                        <path
-                                            d="m331.5 0h-30v222h-30v90h30v200h30v-200h30v-90h-30zm0 282h-30v-30h30z" />
-                                        <path
-                                            d="m210.5 0h-30v53.652h-30v90h30v368.348h30v-368.348h30v-90h-30zm0 113.652h-30v-30h30z" />
-                                    </g>
-                                </svg>
-                            </button>
-                        </div>
+                        <a href="index.html">Главная</a>/Оформление заказа
                     </div>
 
-                    <div class="catalog__wrap flex alistart">
-                        <aside class="catalog__filter">
-                            <div class="catalog__filter_content">
-                                <div class="close_filter">
-                                    <svg width="25" height="25" viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M24.6826 1.77685L23.2686 0.362793L12.6826 10.9487L2.09667 0.362793L0.682617 1.77685L11.2686 12.3628L0.682617 22.9487L2.09667 24.3628L12.6826 13.7768L23.2686 24.3628L24.6826 22.9487L14.0967 12.3628L24.6826 1.77685Z" />
-                                    </svg>
-                                </div>
-                                <p>Размер:</p>
-                                <div class="catalog__filter_item flex flwrap">
-                                    <div class="grey_box">XS</div>
-                                    <div class="grey_box">S</div>
-                                    <div class="grey_box">M</div>
-                                    <div class="grey_box">L</div>
-                                    <div class="grey_box">XL</div>
-                                    <div class="grey_box">XXL</div>
-                                    <div class="grey_box">2XXL</div>
-                                </div>
-                                <p>Цвет:</p>
-                                <div class="catalog__filter_item flex flwrap">
-                                    <div class="grey_box">399</div>
-                                    <div class="grey_box">804</div>
-                                    <div class="grey_box">891</div>
-                                    <div class="grey_box">Белый</div>
-                                    <div class="grey_box">Желтый</div>
-                                    <div class="grey_box">Зеленый</div>
-                                    <div class="grey_box">Красный</div>
-                                </div>
-                                <p>Флаги:</p>
-                                <div class="catalog__filter_item flex flwrap">
-                                    <div class="grey_box">Акция</div>
-                                    <div class="grey_box">Сидка</div>
-                                    <div class="grey_box">Новинка</div>
-                                    <div class="grey_box">Лидер продаж</div>
-                                </div>
-                                <p>Скидка:</p>
-                                <div class="catalog__filter_item flex flwrap">
-                                    <div class="grey_box">Без скидки</div>
-                                    <div class="grey_box">до 30%</div>
-                                    <div class="grey_box">до 50%</div>
-                                    <div class="grey_box">до 75%</div>
-                                </div>
-                                <p>Цена:</p>
-                                <div class="slider-range">
-                                    <div class="block-input flex alicentr justcontbetween">
-                                        <input type="text" id="amount">
-                                        <span>—</span>
-                                        <input type="text" id="amount_1">
-                                    </div>
-                                    <div id="slider-range" class="slider-range-line"></div>
-                                </div>
-                                <div class="catalog__filter_item buttons flex justcontbetween">
-                                    <button type="sumbit" class="btn">Показать</button>
-                                    <button class="red_link">Сбросить</button>
-                                </div>
+                    <div class="catalog__wrap flex alistart justcontbetween">
+                        <div class="cart__table">
+                            <div class="cart__table_thead flex">
+                                <p>Товары:</p>
+                                <p>Цена</p>
+                                <p>Сумма</p>
                             </div>
-                        </aside>
-                        <div class="catalog__content">
-                            <div class="catalog__products flex flwrap">
-                                <div class="catalog__content_product product">
-                                    <div class="product__img">
-                                        <img src="./././../../img/products//prod_1.png"
-                                            alt="ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21">
-                                        <div class="product__overlay flex alicentr justcontcenter">
-                                            Быстрый <br>
-                                            просмотр
+                            <div class="cart__content flex">
+                                <div class="cart__content_product flex">
+                                    <div class="cart__product flex">
+                                        <div class="product__img">
+                                            <img src="./../../img/products/prod_1.png"
+                                                alt="Игровая майка домашняя сезон 2020/21">
                                         </div>
-                                    </div>
-                                    <div class="catalog__product_info">
-                                        <h3><a href="product.html">ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21</a></h3>
-                                        <div class="product__price flex alicentr justcontbetween">
-                                            <ins>5 103 ₽</ins>
-                                            <del>7 290 ₽</del>
-                                            <div class="discount_box flex alicentr justcontcenter">
-                                                -30%
+                                        <div class="cart__product__info">
+                                            <h3><a href="#">Игровая майка домашняя сезон 2020/21</a></h3>
+                                            <span class="articul">Артикул CI3588</span>
+                                            <div class="cart__product__size flex alicentr">
+                                                <p>Размер:</p>
+                                                <div class="flex flwrap">
+                                                    <div class="grey_box">XS</div>
+                                                    <div class="grey_box">S</div>
+                                                    <div class="grey_box">M</div>
+                                                    <div class="grey_box">L</div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="product__colors flex alicentr">
-                                            <span>Другой цвет:</span>
-                                            <div class="red"></div>
-                                            <div class="black"></div>
-                                        </div>
                                     </div>
-                                </div>
-                                <div class="catalog__content_product product">
-                                    <div class="product__img">
-                                        <img src="./././../../img/products//prod_2.png"
-                                            alt="ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21">
-                                        <div class="product__overlay flex alicentr justcontcenter">
-                                            Быстрый <br>
-                                            просмотр
+                                    <div class="flex flcolumn justcontbetween">
+                                        <div class="cart__price flex">
+                                            <span>5 103 ₽</span>
+                                            <span>5 103 ₽</span>
                                         </div>
-                                    </div>
-                                    <div class="catalog__product_info">
-                                        <h3><a href="product.html">ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21</a></h3>
-                                        <div class="product__price flex alicentr justcontbetween">
-                                            <ins>5 103 ₽</ins>
-                                            <del>7 290 ₽</del>
-                                            <div class="discount_box flex alicentr justcontcenter">
-                                                -30%
-                                            </div>
-                                        </div>
-                                        <div class="product__colors flex alicentr">
-                                            <span>Другой цвет:</span>
-                                            <div class="red"></div>
-                                            <div class="black"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="catalog__content_product product">
-                                    <div class="product__img">
-                                        <img src="./././../../img/products//prod_3.png"
-                                            alt="ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21">
-                                        <div class="product__overlay flex alicentr justcontcenter">
-                                            Быстрый <br>
-                                            просмотр
-                                        </div>
-                                    </div>
-                                    <div class="catalog__product_info">
-                                        <h3><a href="product.html">ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21</a></h3>
-                                        <div class="product__price flex alicentr justcontbetween">
-                                            <ins>5 103 ₽</ins>
-                                            <del>7 290 ₽</del>
-                                            <div class="discount_box flex alicentr justcontcenter">
-                                                -30%
-                                            </div>
-                                        </div>
-                                        <div class="product__colors flex alicentr">
-                                            <span>Другой цвет:</span>
-                                            <div class="red"></div>
-                                            <div class="black"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="catalog__content_product product">
-                                    <div class="product__img">
-                                        <img src="./././../../img/products//prod_4.png"
-                                            alt="ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21">
-                                        <div class="product__overlay flex alicentr justcontcenter">
-                                            Быстрый <br>
-                                            просмотр
-                                        </div>
-                                    </div>
-                                    <div class="catalog__product_info">
-                                        <h3><a href="product.html">ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21</a></h3>
-                                        <div class="product__price flex alicentr justcontbetween">
-                                            <ins>5 103 ₽</ins>
-                                            <del>7 290 ₽</del>
-                                            <div class="discount_box flex alicentr justcontcenter">
-                                                -30%
-                                            </div>
-                                        </div>
-                                        <div class="product__colors flex alicentr">
-                                            <span>Другой цвет:</span>
-                                            <div class="red"></div>
-                                            <div class="black"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="catalog__content_product product">
-                                    <div class="product__img">
-                                        <img src="./././../../img/products//prod_5.png"
-                                            alt="ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21">
-                                        <div class="product__overlay flex alicentr justcontcenter">
-                                            Быстрый <br>
-                                            просмотр
-                                        </div>
-                                    </div>
-                                    <div class="catalog__product_info">
-                                        <h3><a href="product.html">ИГРОВАЯ МАЙКА ДОМАШНЯЯ СЕЗОН 2020/21</a></h3>
-                                        <div class="product__price flex alicentr justcontbetween">
-                                            <ins>5 103 ₽</ins>
-                                            <del>7 290 ₽</del>
-                                            <div class="discount_box flex alicentr justcontcenter">
-                                                -30%
-                                            </div>
-                                        </div>
-                                        <div class="product__colors flex alicentr">
-                                            <span>Другой цвет:</span>
-                                            <div class="red"></div>
-                                            <div class="black"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="catalog__pagination">
-                                <button class="more__items flmegacenter">Показать еще</button>
-                                <div class="catalog__pagination_body flex alicentr justcontbetween">
-                                    <div class="catalog__pagination_items flex">
-                                        <p>Товаров на странице:</p>
-                                        <p>48</p>
-                                    </div>
-                                    <div class="catalog__pagination_items flex">
-                                        <p>Показывать по:</p>
-                                        <div>
-                                            <span class="active">12</span>
-                                            <span>24</span>
-                                            <span>48</span>
+                                        <div class="product__quantity">
+                                            <form class="flex alicentr">
+                                                <span>Количество:</span>
+                                                <div class="value-button" id="increase" onclick="increaseValue()"
+                                                    value="Increase Value">+
+                                                </div>
+                                                <input type="number" id="number" value="1" min="1" readonly />
+                                                <div class="value-button" id="decrease" onclick="decreaseValue()"
+                                                    value="Decrease Value">-
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <form action="#" class="registr__form">
+                            <h2>Зарегистрируйтесь чтобы продолжить</h2>
+                            <input type="text" placeholder="ЛОГИН (АДРЕС ЭЛ. ПОЧТЫ)">
+                            <input type="text" placeholder="ПАРОЛЬ">
+                            <div class="academy__form_legal flex">
+                                <input type="checkbox" id="legalConcent" checked>
+                                <label for="legalConcent" class="flex alibaseline">
+                                    <div class="concent_box"></div>
+                                    Я даю акционерному обществу футбольный клуб «спартак-москва» свое согласие на
+                                    обработку моих персональных данных, в соответствии
+                                    с федеральным законом от 27.07.2006 года
+                                </label>
+                            </div>
+                            <button type="submit" class="btn">Продолжить оформление заказа</button>
+                        </form>
                     </div>
                 </div>
             </section>
@@ -413,6 +248,24 @@
         $('.grey_box').click(function () {
             $(this).toggleClass('chosen');
         })
+
+        /* Custom Input Number */
+        function increaseValue() {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value++;
+            document.getElementById('number').value = value;
+        }
+
+        function decreaseValue() {
+            var value = parseInt(document.getElementById('number').value, 10);
+            value = isNaN(value) ? 0 : value;
+            value < 1 ? value = 1 : '';
+            if (value > 1) {
+                value--;
+            }
+            document.getElementById('number').value = value;
+        }
     </script>
 </body>
 
