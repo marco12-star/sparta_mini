@@ -343,7 +343,7 @@ input[type=number] {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 11;
+    z-index: 999999;
     visibility: hidden;
     transform: scale(.8);
     opacity: 0;
@@ -388,7 +388,7 @@ input[type=number] {
         opacity: .5;
         width: 100vw;
         height: 100vh;
-        z-index: 9;
+        z-index: 99999;
         display: none;
 
         &.reveal {

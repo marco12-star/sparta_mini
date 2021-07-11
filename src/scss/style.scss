@@ -774,6 +774,198 @@ h6 {
 	background: #000;
 }
 
+/* Modals */
+
+.modal_overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #000;
+	opacity: .5;
+	width: 100vw;
+	height: 100vh;
+	z-index: 9999;
+	display: none;
+
+	&.reveal {
+		display: block;
+	}
+}
+
+
+.modal__wrap {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	visibility: hidden;
+	transform: scale(.8);
+	opacity: 0;
+	transition: .5s ease;
+
+	& * {
+		transition: visibility 0s ease, all .2s ease;
+	}
+
+	&.reveal {
+		transform: unset;
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+.user_modal {
+	max-width: 448px;
+	width: 100%;
+	background: #fff;
+	padding: 24px;
+	text-align: center;
+	z-index: 999999;
+
+	.modal__head {
+		margin-bottom: 16px;
+	}
+
+	input {
+		&[type="checkbox"] {
+			width: 0;
+			height: 0;
+			overflow: hidden;
+			padding: 0;
+			margin: 0;
+			position: absolute;
+		}
+	}
+
+	h4 {
+		font-size: 24px;
+		line-height: 32px;
+		color: #1A1A1A;
+	}
+
+	.close {
+
+		img {
+			width: 16px;
+			height: 16px;
+			opacity: .6;
+		}
+
+		&:hover img {
+			transform: scale(1.1);
+			opacity: 1;
+		}
+	}
+
+	.modal__help {
+		a {
+			font-size: 12px;
+			line-height: 16px;
+			color: var(--red);
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
+		.login_check {
+			font-size: 12px;
+			line-height: 16px;
+			margin: 0;
+
+			.concent_box {
+				border-color: #000;
+
+				&:after {
+					filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(189deg) brightness(101%) contrast(105%);
+				}
+			}
+		}
+	}
+
+	button {
+		width: 100%;
+	}
+
+	.btn {
+		margin-top: 24px;
+		margin-bottom: 12px;
+	}
+
+	p {
+		margin-top: 16px;
+		margin-bottom: 8px;
+	}
+
+	.modal__social {
+		a:first-child {
+			margin-right: 16px;
+		}
+
+		a:hover {
+			filter: brightness(1.1);
+		}
+	}
+
+}
+
+.registr {
+	.academy__form_legal {
+		text-align: left;
+		margin: 0;
+	}
+
+}
+
+.advantages {
+	margin-left: 24px;
+	text-align: left;
+
+	h3 {
+		font-size: 24px;
+		line-height: 32px;
+	}
+
+	p:nth-child(2) {
+		font-size: 16px;
+		line-height: 20px;
+		margin-top: 4px;
+		margin-bottom: 24px;
+	}
+
+	ul {
+		list-style: none;
+		margin-bottom: 24px;
+	}
+
+	li {
+		font-size: 12px;
+		line-height: 16px;
+		position: relative;
+
+		&:before {
+			content: '';
+			display: block;
+			width: 12px;
+			height: 12px;
+			background: url(./../img/icons/tick.svg) 100%/cover no-repeat;
+			position: absolute;
+			left: -20px;
+			top: 2px;
+		}
+	}
+
+	p:last-child {
+		font-size: 12px;
+		line-height: 16px;
+		margin: 0;
+	}
+}
+
+/* Modals */
+
 @import './dashboard';
 @import './academy';
 @import './media';

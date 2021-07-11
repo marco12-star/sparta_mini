@@ -364,6 +364,112 @@
 			@@include('./templates/_footer.html')
 		</div>
 	</main>
+
+	<!-- Login and registr modals -->
+
+	<div class="modal_overlay"></div>
+	<div class="modal__wrap login_modal flmegacenter">
+		<div class="user_modal">
+			<div class="modal__head flex justcontbetween alicentr">
+				<h4>Авторизация</h4>
+				<div class="close__button">
+					<button class="close">
+
+						<img src="./img/icons/close.svg">
+
+					</button>
+				</div>
+			</div>
+			<input type="text" placeholder="ЛОГИН (АДРЕС ЭЛ. ПОЧТЫ)">
+			<input type="text" placeholder="ПАРОЛЬ">
+			<div class="modal__help flex justcontbetween">
+				<div class="academy__form_legal login_check flex">
+					<input type="checkbox" id="remember">
+					<label for="remember" class="flex alibaseline">
+						<div class="concent_box"></div>
+						Запомнить меня
+					</label>
+				</div>
+				<a href="#">Забыли пароль?</a>
+			</div>
+			<button type="submit" class="btn">Вход</button>
+			<button class="red_link">Регистрация</button>
+			<p>Войти через:</p>
+			<div class="modal__social flex alicentr justcontcenter">
+				<a href="#">
+					<img src="./img/icons/vk_log.svg" alt="">
+				</a>
+				<a href="#">
+					<img src="./img/icons/face_log.svg" alt="">
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal__wrap reveal flmegacenter">
+		<div class="registr__wrap flex alistart">
+			<div class="user_modal registr">
+				<div class="modal__head flex justcontbetween alicentr">
+					<h4>Регистрация</h4>
+					<div class="close__button">
+						<button class="close">
+
+							<img src="./img/icons/close.svg">
+
+						</button>
+					</div>
+				</div>
+				<input type="text" placeholder="ФАМИЛИЯ*">
+				<input type="text" placeholder="ИМЯ*">
+				<input type="text" placeholder="ОТЧЕСТВО*">
+				<input type="text" placeholder="ТЕЛЕФОН*">
+				<input type="text" placeholder="ЛОГИН (АДРЕС ЭЛ. ПОЧТЫ)*">
+				<input type="text" placeholder="ПАРОЛЬ*">
+				<input type="text" placeholder="ПОДТВЕРЖДЕНИЕ ПАРОЛЯ*">
+				<div class="modal__help flex justcontbetween">
+					<div class="academy__form_legal flex">
+						<input type="checkbox" id="legalConcent" checked>
+						<label for="legalConcent" class="flex alibaseline">
+							<div class="concent_box"></div>
+							Я даю акционерному обществу футбольный клуб «спартак-москва» свое согласие на
+							обработку моих персональных данных, в соответствии
+							с федеральным законом от 27.07.2006 года
+						</label>
+					</div>
+				</div>
+				<button type="submit" class="btn">Зарегистрироваться</button>
+				<p>Войти через:</p>
+				<div class="modal__social flex alicentr justcontcenter">
+					<a href="#">
+						<img src="./img/icons/vk_log.svg" alt="">
+					</a>
+					<a href="#">
+						<img src="./img/icons/face_log.svg" alt="">
+					</a>
+				</div>
+			</div>
+			<div class="advantages user_modal">
+				<h3>Преимущества регистрации</h3>
+				<p>Зарегистрированным пользователям доступно больше возможностей! Вот всего лишь некоторые из них:</p>
+				<ul>
+					<li>Индивидуальные промо-коды на скидки</li>
+					<li>Рассылки о скидках, акциях, распродажах и конкурсах</li>
+					<li>Возможность хранить историю заказов</li>
+					<li>Накапливать баллы и оплачивать ими покупки</li>
+					<li>Участие в программе лояльности по <a href="#">«Карте болельщика»</a>
+						<a href="#">Подробнее о программе лояльности</a></li>
+				</ul>
+				<p>
+					Мы рекомендуем вам регистрироваться на сайте для того
+					чтобы иметь полный доступ ко всем сервисам нашего магазина
+					с возможностью участвовать в различных программах поощрения наших покупателей.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Login and registr modals -->
+
 	<!-- Jquery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
 		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -372,7 +478,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
 		integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		
+
 	<script src="js/script.min.js" defer></script>
 	<script>
 		$(document).ready(function () {
@@ -409,6 +515,28 @@
 					}
 				}]
 			});
+		});
+
+
+		$('#login').click(function () {
+			$('.modal_overlay').addClass('reveal')
+			$('.login_modal').addClass('reveal')
+			$('body').addClass('hidden')
+		})
+		$('.close').click(function () {
+			$('.modal_overlay').removeClass('reveal')
+			$('.login_modal').removeClass('reveal')
+			$('body').removeClass('hidden')
+		})
+
+		$(document).mouseup(function (e) {
+			var container = $(".user_modal");
+
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
+				$('.modal__wrap').removeClass('reveal')
+				$('.modal_overlay').removeClass('reveal')
+				$('body').removeClass('hidden')
+			}
 		});
 	</script>
 </body>
