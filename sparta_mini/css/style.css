@@ -2393,6 +2393,10 @@ h6 {
           filter: brightness(1.1);
 }
 
+.registr {
+  height: 732px;
+}
+
 .registr .academy__form_legal {
   text-align: left;
   margin: 0;
@@ -3761,6 +3765,10 @@ input::placeholder {
   .loged .academy__form_legal {
     margin-bottom: 15px;
   }
+
+  .advantages {
+    display: none;
+  }
 }
 
 @media all and (max-width: 767px) {
@@ -4443,6 +4451,11 @@ input::placeholder {
   .cart .articul {
     font-size: 13px;
     opacity: 0.5;
+  }
+
+  .user_modal {
+    width: 90%;
+    margin: auto;
   }
 }
 

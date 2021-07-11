@@ -406,7 +406,7 @@
 		</div>
 	</div>
 
-	<div class="modal__wrap reveal flmegacenter">
+	<div class="modal__wrap registr_modal flmegacenter">
 		<div class="registr__wrap flex alistart">
 			<div class="user_modal registr">
 				<div class="modal__head flex justcontbetween alicentr">
@@ -528,17 +528,37 @@
 			$('.login_modal').removeClass('reveal')
 			$('body').removeClass('hidden')
 		})
-
 		$(document).mouseup(function (e) {
 			var container = $(".user_modal");
-
+			
 			if (!container.is(e.target) && container.has(e.target).length === 0) {
-				$('.modal__wrap').removeClass('reveal')
+				$('.login_modal').removeClass('reveal')
 				$('.modal_overlay').removeClass('reveal')
 				$('body').removeClass('hidden')
 			}
 		});
-	</script>
+
+
+		$('#registr').click(function () {
+			$('.modal_overlay').addClass('reveal')
+			$('.registr_modal').addClass('reveal')
+			$('body').addClass('hidden')
+		})
+		$('.close').click(function () {
+			$('.modal_overlay').removeClass('reveal')
+			$('.registr_modal').removeClass('reveal')
+			$('body').removeClass('hidden')
+		})
+		$(document).mouseup(function (e) {
+			var container = $(".user_modal");
+			
+			if (!container.is(e.target) && container.has(e.target).length === 0) {
+				$('.registr_modal').removeClass('reveal')
+				$('.modal_overlay').removeClass('reveal')
+				$('body').removeClass('hidden')
+			}
+		});
+		</script>
 </body>
 
 </html>

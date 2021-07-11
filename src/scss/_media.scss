@@ -687,6 +687,10 @@
 		}
 	}
 
+	.advantages {
+		display: none;
+	}
+
 }
 
 @media all and (max-width: 767px) {
@@ -1360,6 +1364,11 @@
 			font-size: 13px;
 			opacity: .5;
 		}
+	}
+
+	.user_modal {
+		width: 90%;
+		margin: auto;
 	}
 
 }
