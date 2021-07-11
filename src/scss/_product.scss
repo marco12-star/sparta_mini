@@ -609,6 +609,10 @@ body.hidden {
     form {
         max-width: 223px;
 
+        input {
+            margin: 0;
+        }
+
         span {
             margin-right: 16px;
             font-size: 20px;

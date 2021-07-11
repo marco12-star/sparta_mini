@@ -994,6 +994,10 @@ body.hidden {
   max-width: 223px;
 }
 
+.product__quantity form input {
+  margin: 0;
+}
+
 .product__quantity form span {
   margin-right: 16px;
   font-size: 20px;
