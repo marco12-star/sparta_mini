@@ -4537,7 +4537,7 @@ input::placeholder {
   }
 
   .cart .cart__product__size p {
-    font-size: 15px;
+    display: none;
   }
 
   .cart .cart__product__size div > div {
