@@ -259,6 +259,7 @@
 			tr:nth-child(odd) {
 				border-top: 1px solid #cccbcb;
 				padding-top: 15px;
+
 				.price_td {
 					display: none;
 				}
@@ -333,6 +334,7 @@
 			form {
 				justify-content: flex-end;
 			}
+
 			input {
 				width: 40px;
 			}
@@ -604,6 +606,9 @@
 	}
 
 	.open_menu {
+		overflow-x: hidden;
+		overflow-y: hidden;
+
 		body,
 		.content__slide {
 			overflow-x: hidden;
@@ -738,6 +743,7 @@
 				content: "";
 				height: 36.4px;
 			}
+
 			.product__quantity {
 				span {
 					display: none;
@@ -1073,6 +1079,7 @@
 		.product__img {
 			margin-right: 10px;
 		}
+
 		.cart__product__info {
 			margin-right: 45px;
 		}

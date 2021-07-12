@@ -3727,6 +3727,11 @@ input::placeholder {
     margin-bottom: 18px;
   }
 
+  .open_menu {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
   .open_menu body,
   .open_menu .content__slide {
     overflow-x: hidden;
