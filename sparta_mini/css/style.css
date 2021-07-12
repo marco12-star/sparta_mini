@@ -1285,6 +1285,10 @@ body.hidden {
   display: none;
 }
 
+.cart .discount_box {
+  padding: 5px;
+}
+
 .loged h2 {
   font-size: 20px;
   line-height: 24px;
