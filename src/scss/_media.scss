@@ -600,7 +600,8 @@
 	}
 
 	.open_menu {
-		body {
+		body,
+		.content__slide {
 			overflow-x: hidden;
 			overflow-y: hidden;
 		}

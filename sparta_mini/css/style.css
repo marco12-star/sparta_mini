@@ -1129,6 +1129,10 @@ body.hidden {
   white-space: nowrap;
 }
 
+.cart table tbody .price_td span {
+  font-family: "Open Sans", sans-serif;
+}
+
 .cart table tbody .quantity__td {
   padding: 0;
   padding-top: 45px;
@@ -3711,7 +3715,8 @@ input::placeholder {
     margin-bottom: 18px;
   }
 
-  .open_menu body {
+  .open_menu body,
+  .open_menu .content__slide {
     overflow-x: hidden;
     overflow-y: hidden;
   }
