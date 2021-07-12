@@ -248,7 +248,7 @@
 					border: none;
 					position: relative;
 					padding-left: 50%;
-					border-bottom: 1px solid #cccbcb;
+					/* border-bottom: 1px solid #cccbcb; */
 					padding: 15px 10px;
 					padding-top: 55px;
 				}
@@ -258,11 +258,11 @@
 				}
 			}
 
-			tr {
-				margin: 0 0 1rem 0;
+			tr:nth-child(odd) {
+				.price_td {
+					display: none;
+				}
 			}
-
-
 
 			td:before {
 				width: 100%;
@@ -277,28 +277,60 @@
 
 			tr:nth-child(odd) td:nth-of-type(1):before {
 				content: "Товар";
-				border-top: 1px solid var(--red);
 			}
 
-			td:nth-of-type(2):before {
-				content: "Цена";
-				padding-left: 10px;
+			.quantity__tr {
+				display: flex;
+				flex-direction: row-reverse;
+				width: 100%;
+
+				td {
+					width: 100%;
+				}
 			}
 
-			td:nth-of-type(3):before {
-				content: "Сумма";
-				padding-left: 10px;
-			}
-
-			tr:nth-child(even) td:before {
+			.quantity__td:before {
 				content: "Количество";
 				padding-left: 10px;
+				text-align: right;
+			}
+
+			.disc_td {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 22px;
+
+				&:before {
+					content: '';
+					height: 42.4px;
+				}
+			}
+
+			.mobile_price_td {
+				display: flex;
+				align-items: center;
+				white-space: nowrap;
+
+				&:before {
+					content: "Цена";
+					padding-left: 10px;
+				}
 			}
 
 			.close {
-				top: 9px;
+				top: 60px;
 				right: 10px;
 				opacity: 1;
+			}
+		}
+
+		.product__quantity {
+			form {
+				justify-content: flex-end;
+			}
+			input {
+				width: 40px;
 			}
 		}
 	}
@@ -691,6 +723,34 @@
 		display: none;
 	}
 
+	.cart {
+		table {
+			td:before {
+				font-size: 16px;
+			}
+
+			.disc_td:before {
+				content: "";
+				height: 36.4px;
+			}
+			.product__quantity {
+				span {
+					display: none;
+				}
+			}
+
+			.close {
+				right: 5px;
+			}
+
+
+			.quantity__tr td {
+				padding-top: 40px;
+			}
+		}
+
+	}
+
 }
 
 @media all and (max-width: 767px) {
@@ -1005,6 +1065,15 @@
 				text-align: center;
 			}
 
+		}
+	}
+
+	.cart {
+		.product__img {
+			margin-right: 10px;
+		}
+		.cart__product__info {
+			margin-right: 45px;
 		}
 	}
 
@@ -1327,10 +1396,6 @@
 	}
 
 	.cart {
-
-		.cart__product__info {
-			margin-right: 0;
-		}
 
 		.product__img {
 			margin-right: 25px;

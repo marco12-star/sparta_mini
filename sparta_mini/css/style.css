@@ -1085,6 +1085,11 @@ body.hidden {
   padding-bottom: 12px;
 }
 
+.cart table thead th:last-child {
+  padding-right: 45px;
+  text-align: right;
+}
+
 .cart table thead > p {
   max-width: 566px;
   width: 100%;
@@ -1116,13 +1121,17 @@ body.hidden {
 }
 
 .cart table tbody .price_td {
+  padding-right: 45px;
   padding-bottom: 0;
   font-size: 20px;
   line-height: 24px;
+  text-align: right;
+  white-space: nowrap;
 }
 
 .cart table tbody .quantity__td {
   padding: 0;
+  padding-top: 45px;
 }
 
 .cart .cart__product {
@@ -1243,13 +1252,11 @@ body.hidden {
 }
 
 .cart .close {
-  width: 16px;
-  height: 16px;
-  margin-top: 5px;
+  width: 25px;
   position: absolute;
   top: 21px;
   right: 0;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .cart .close img {
@@ -1262,6 +1269,15 @@ body.hidden {
       -ms-transform: scale(1.1);
           transform: scale(1.1);
   opacity: 1;
+}
+
+.cart .product__quantity form {
+  max-width: 240px;
+}
+
+.cart .mobile_price_td,
+.cart .disc_td {
+  display: none;
 }
 
 .loged h2 {
@@ -3301,7 +3317,7 @@ input::placeholder {
     border: none;
     position: relative;
     padding-left: 50%;
-    border-bottom: 1px solid #cccbcb;
+    /* border-bottom: 1px solid #cccbcb; */
     padding: 15px 10px;
     padding-top: 55px;
   }
@@ -3310,8 +3326,8 @@ input::placeholder {
     padding-bottom: 10px;
   }
 
-  .cart table tr {
-    margin: 0 0 1rem 0;
+  .cart table tr:nth-child(odd) .price_td {
+    display: none;
   }
 
   .cart table td:before {
@@ -3327,28 +3343,76 @@ input::placeholder {
 
   .cart table tr:nth-child(odd) td:nth-of-type(1):before {
     content: "Товар";
-    border-top: 1px solid var(--red);
   }
 
-  .cart table td:nth-of-type(2):before {
+  .cart table .quantity__tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    width: 100%;
+  }
+
+  .cart table .quantity__tr td {
+    width: 100%;
+  }
+
+  .cart table .quantity__td:before {
+    content: "Количество";
+    padding-left: 10px;
+    text-align: right;
+  }
+
+  .cart table .disc_td {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 22px;
+  }
+
+  .cart table .disc_td:before {
+    content: "";
+    height: 42.4px;
+  }
+
+  .cart table .mobile_price_td {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    white-space: nowrap;
+  }
+
+  .cart table .mobile_price_td:before {
     content: "Цена";
     padding-left: 10px;
   }
 
-  .cart table td:nth-of-type(3):before {
-    content: "Сумма";
-    padding-left: 10px;
-  }
-
-  .cart table tr:nth-child(even) td:before {
-    content: "Количество";
-    padding-left: 10px;
-  }
-
   .cart table .close {
-    top: 9px;
+    top: 60px;
     right: 10px;
     opacity: 1;
+  }
+
+  .cart .product__quantity form {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+
+  .cart .product__quantity input {
+    width: 40px;
   }
 }
 
@@ -3773,6 +3837,27 @@ input::placeholder {
   .advantages {
     display: none;
   }
+
+  .cart table td:before {
+    font-size: 16px;
+  }
+
+  .cart table .disc_td:before {
+    content: "";
+    height: 36.4px;
+  }
+
+  .cart table .product__quantity span {
+    display: none;
+  }
+
+  .cart table .close {
+    right: 5px;
+  }
+
+  .cart table .quantity__tr td {
+    padding-top: 40px;
+  }
 }
 
 @media all and (max-width: 767px) {
@@ -4109,6 +4194,14 @@ input::placeholder {
   .cart .registr__form h2 {
     text-align: center;
   }
+
+  .cart .product__img {
+    margin-right: 10px;
+  }
+
+  .cart .cart__product__info {
+    margin-right: 45px;
+  }
 }
 
 @media all and (max-width: 567px) {
@@ -4420,10 +4513,6 @@ input::placeholder {
   .loged .input__wrap input {
     margin-left: 0;
     margin-bottom: 16px;
-  }
-
-  .cart .cart__product__info {
-    margin-right: 0;
   }
 
   .cart .product__img {

@@ -16,6 +16,11 @@
                 padding-bottom: 12px;
             }
 
+            th:last-child {
+                padding-right: 45px;
+                text-align: right;
+            }
+
             &>p {
                 max-width: 566px;
                 width: 100%;
@@ -45,13 +50,17 @@
             }
 
             .price_td {
+                padding-right: 45px;
                 padding-bottom: 0;
                 font-size: 20px;
                 line-height: 24px;
+                text-align: right;
+                white-space: nowrap;
             }
 
             .quantity__td {
                 padding: 0;
+                padding-top: 45px;
             }
         }
     }
@@ -161,9 +170,7 @@
     }
 
     .close {
-        width: 16px;
-        height: 16px;
-        margin-top: 5px;
+        width: 25px;
         position: absolute;
         top: 21px;
         right: 0;
@@ -173,7 +180,7 @@
             height: 100%;
         }
 
-        opacity: .3;
+        opacity: .5;
 
         &:hover {
             transform: scale(1.1);
@@ -181,6 +188,14 @@
         }
     }
 
+    .product__quantity form {
+        max-width: 240px;
+    }
+
+    .mobile_price_td,
+    .disc_td {
+        display: none;
+    }
 
 }
 
